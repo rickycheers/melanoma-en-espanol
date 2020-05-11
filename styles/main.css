@@ -1,0 +1,52 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+    @apply bg-white-100;
+}
+
+a, .link {
+    @apply text-skin-dark-200;
+}
+
+a:hover, a:focus, .link:hover {
+    @apply text-skin-dark-400;
+}
+
+a:focus, .link:focus {
+    @apply outline-none shadow-outline;
+}
+
+.btn-link {
+    @apply text-skin-dark-200 p-2 border border-skin-dark-200 rounded-md;
+}
+
+.btn-link:hover {
+    @apply border-skin-dark-400;
+}
+
+.nav-item {
+    @apply inline-block px-3 py-4 tracking-wide no-underline text-center text-white uppercase text-sm border-b-2 border-transparent;
+}
+
+.nav-item:hover {
+    @apply bg-skin-pale-200 text-white;
+}
+
+.nav-item:focus {
+    @apply outline-none shadow-outline;
+}
+
+.nav-item--active {
+    @apply font-extrabold border-b-2 border-skin-dark-200;
+}
+
+.hero-section {
+}
+
+.row-section {
+    min-height: 600px;
+}
