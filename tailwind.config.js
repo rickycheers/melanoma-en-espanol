@@ -41,6 +41,9 @@ module.exports = {
           300: '#e8d8cd',
           400: '#e4dbd2'
         }
+      },
+      height: {
+        'slider1': '20rem'
       }
     },
   },

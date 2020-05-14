@@ -50,3 +50,8 @@ a:focus, .link:focus {
 .row-section {
     min-height: 600px;
 }
+
+/* slider */
+.slick-dots {
+    bottom: 30px;
+}
