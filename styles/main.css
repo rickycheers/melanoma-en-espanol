@@ -52,6 +52,21 @@ a:focus, .link:focus {
 }
 
 /* slider */
+.slick-arrow {
+    @apply absolute top-0 mt-40 bg-white rounded-full shadow-md h-12 w-12 text-2xl;
+    z-index: 1;
+}
+
+.slick-arrow-left {
+    left: 0;
+    @apply -ml-6;
+}
+
+.slick-arrow-right {
+    right: 0;
+    @apply -mr-6;
+}
+
 .slick-dots {
     bottom: 30px;
 }

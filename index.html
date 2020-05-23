@@ -48,7 +48,7 @@
                 <!-- Carousel Body -->
                 <!-- Piel Etiqueta -->
                 <div class="slide">
-                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider1">
+                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
                             <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/piel-etiqueta.png" alt="">
                         </div>
@@ -73,7 +73,7 @@
                 </div>
                 <!-- Tipos de Melanoma -->
                 <div class="slide">
-                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider1">
+                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
                             <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/tipos-melanoma.png" alt="">
                         </div>
@@ -98,7 +98,7 @@
                 </div>
                 <!-- Prevención -->
                 <div class="slide">
-                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider1">
+                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
                             <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/prevencion.png" alt="">
                         </div>
@@ -123,7 +123,7 @@
                 </div>
                 <!-- Tratamientos -->
                 <div class="slide">
-                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider1">
+                    <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
                             <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/tratamientos.png" alt="">
                         </div>
@@ -282,12 +282,13 @@ Cuando iba en la Universidad me tuvieron que quitar un lunar por el pecho que er
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
        $('#slider').slick({
-           autoplay: true,
+           autoplay: 0,
            autoplaySpeed: 8000,
+           adaptiveHeight: true,
            dots: true,
            arrows: true,
-           prevArrow: '<button class="absolute top-0 mt-32 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl -ml-6 link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
-           nextArrow: '<button class="absolute top-0 mt-32 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl -mr-6 link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
+           prevArrow: '<button class="slick-arrow-left link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
+           nextArrow: '<button class="slick-arrow-right link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
         });
     </script>
 </body>

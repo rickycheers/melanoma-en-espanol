@@ -43,7 +43,8 @@ module.exports = {
         }
       },
       height: {
-        'slider1': '20rem'
+        'slider1': '20rem',
+        'slider2': '22.4rem'
       }
     },
   },
