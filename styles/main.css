@@ -8,15 +8,19 @@ body {
     @apply bg-white-100;
 }
 
-a, .link {
+a,
+.link {
     @apply text-skin-dark-200;
 }
 
-a:hover, a:focus, .link:hover {
+a:hover,
+a:focus,
+.link:hover {
     @apply text-skin-dark-400;
 }
 
-a:focus, .link:focus {
+a:focus,
+.link:focus {
     @apply outline-none shadow-outline;
 }
 
@@ -44,8 +48,31 @@ a:focus, .link:focus {
     @apply font-extrabold border-b-2 border-skin-dark-200;
 }
 
-.hero-section {
+.subnav {
+    @apply absolute z-10 w-1/2 pt-2;
 }
+
+.subnav__arrow {
+    @apply absolute top-0 w-4 h-4 origin-center transform rotate-45 translate-x-8 -translate-y-2 bg-white border-t border-l border-gray-200 rounded-sm pointer-events-none;
+}
+
+.subnav__container {
+    @apply relative p-5 bg-white flex flex-row border border-gray-200 rounded-md shadow-lg;
+}
+
+.subnav__title {
+    @apply text-sm text-skin-dark-200 uppercase mb-3;
+}
+
+.subnav__items-container {
+    @apply text-sm leading-loose flex flex-col;
+}
+
+.subnav__item {
+    @apply text-gray-800
+}
+
+.hero-section {}
 
 .row-section {
     min-height: 600px;

@@ -8,4 +8,5 @@ mix
     })
     .postCss('styles/main.css', 'public/css', [
         require('tailwindcss')
-    ]);
+    ])
+    .js('js/main.js', 'public/js/main.js');

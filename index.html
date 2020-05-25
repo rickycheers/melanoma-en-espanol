@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melanoma en Español</title>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="//localhost:8080/public/css/main.css">
 </head>
+
 <body>
     <header class="container mx-auto md:px-6">
         <div class="logo w-64 py-6 px-4" style="width: 17rem;">
@@ -28,11 +30,13 @@
                 </svg>
             </button>
         </div> -->
-        <div class="bg-skin-pale-300 shadow">
+        <div id="nav" class="vc bg-skin-pale-300 shadow">
             <nav class="hidden md:block">
                 <a href="#" class="nav-item nav-item--active">Inicio</a>
                 <a href="#" class="nav-item">Misión</a>
-                <a href="#" class="nav-item">Melanoma</a>
+                <sub-menu item="melanoma">
+                    <a href="#" class="nav-item">Melanoma</a>
+                </sub-menu>
                 <a href="#" class="nav-item">Blog</a>
                 <a href="#" class="nav-item">Productos Recomendados</a>
                 <a href="#" class="nav-item">Contáctanos</a>
@@ -43,21 +47,25 @@
                 <a href="#" class="nav-item">Blog</a>
             </nav>
         </div>
-        <section class="hero-section px-6 lg:px-0">
+        <section class="hero-section px-6 lg:px-0 z-0">
             <div id="slider" class="relative">
                 <!-- Carousel Body -->
                 <!-- Piel Etiqueta -->
                 <div class="slide">
                     <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
-                            <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/piel-etiqueta.png" alt="">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="/public/images/piel-etiqueta.png" alt="">
                         </div>
                         <div class="w-full lg:w-3/5 h-full flex items-center bg-gray-100">
                             <div class="p-12 md:pr-24 md:pl-16">
                                 <p class="text-gray-700">
-                                    La piel es una prenda delicada y sensible al sol y no se puede reemplazar por una nueva, así que protégela.
+                                    La piel es una prenda delicada y sensible al sol y no se puede reemplazar por una
+                                    nueva, así que protégela.
                                     <br><br>
-                                    La gran mayoría de los melanomas son causados por el sol y los rayos UV, por lo tanto es importante cuidar nuestra piel del sol, así estaremos reduciendo la probabilidad de tener melanoma o algún otro tipo de cáncer de piel en el futuro.
+                                    La gran mayoría de los melanomas son causados por el sol y los rayos UV, por lo
+                                    tanto es importante cuidar nuestra piel del sol, así estaremos reduciendo la
+                                    probabilidad de tener melanoma o algún otro tipo de cáncer de piel en el futuro.
                                     <br><br>
                                     <a class="flex items-baseline mt-3" href="#">
                                         <span>¡Conoce nuestra guía de prevención!</span>
@@ -65,7 +73,8 @@
                                     </a>
                                 </p>
                             </div>
-                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <polygon points="50,0 100,0 50,100 0,100" />
                             </svg>
                         </div>
@@ -75,14 +84,19 @@
                 <div class="slide">
                     <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
-                            <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/tipos-melanoma.png" alt="">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="/public/images/tipos-melanoma.png" alt="">
                         </div>
                         <div class="w-full lg:w-3/5 h-full flex items-center bg-gray-100">
                             <div class="p-12 md:pr-24 md:pl-16">
                                 <p class="text-gray-700">
-                                    ¿Sabías que el melanoma no sólo le da a personas de piel clara, ojos azules, y cabello rubio o rojizo?, ¿Sabías que el melanoma puede aparecer en zonas que nunca han estado expuestas al sol?
+                                    ¿Sabías que el melanoma no sólo le da a personas de piel clara, ojos azules, y
+                                    cabello rubio o rojizo?, ¿Sabías que el melanoma puede aparecer en zonas que nunca
+                                    han estado expuestas al sol?
                                     <br><br>
-                                    El Melanoma Lentiginoso Acral representa el 5% del total de casos de melanoma. Es el tipo de melanoma más común en gente de color, y este puede surgir en las palmas de las manos, plantas de los pies o debajo de las uñas.
+                                    El Melanoma Lentiginoso Acral representa el 5% del total de casos de melanoma. Es el
+                                    tipo de melanoma más común en gente de color, y este puede surgir en las palmas de
+                                    las manos, plantas de los pies o debajo de las uñas.
                                     <br><br>
                                     <a class="flex items-baseline mt-3" href="#">
                                         <span>Conoce más sobre los diferentes tipos de melanoma.</span>
@@ -90,7 +104,8 @@
                                     </a>
                                 </p>
                             </div>
-                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <polygon points="50,0 100,0 50,100 0,100" />
                             </svg>
                         </div>
@@ -100,14 +115,19 @@
                 <div class="slide">
                     <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
-                            <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/prevencion.png" alt="">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="/public/images/prevencion.png" alt="">
                         </div>
                         <div class="w-full lg:w-3/5 h-full flex items-center bg-gray-100">
                             <div class="p-12 md:pr-24 md:pl-16">
                                 <p class="text-gray-700">
-                                    No hay forma de prevenir el melanoma al 100%, pues existen factores de riesgo que no podemos controlar, sin embargo, si conocemos estos factores podremos estar siempre alerta de cualquier cambio en nuestra piel.
+                                    No hay forma de prevenir el melanoma al 100%, pues existen factores de riesgo que no
+                                    podemos controlar, sin embargo, si conocemos estos factores podremos estar siempre
+                                    alerta de cualquier cambio en nuestra piel.
                                     <br><br>
-                                    La detección temprana del melanoma hace la diferencia. No tengas miedo de encontrar algo sospechoso, siempre es mejor detectarlo a tiempo y visitar a un médico, esto puede <strong>salvar tu vida</strong>.
+                                    La detección temprana del melanoma hace la diferencia. No tengas miedo de encontrar
+                                    algo sospechoso, siempre es mejor detectarlo a tiempo y visitar a un médico, esto
+                                    puede <strong>salvar tu vida</strong>.
                                     <br><br>
                                     <a class="flex items-baseline mt-3" href="#">
                                         <span>Factores de riesgo del melanoma</span>
@@ -115,7 +135,8 @@
                                     </a>
                                 </p>
                             </div>
-                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <polygon points="50,0 100,0 50,100 0,100" />
                             </svg>
                         </div>
@@ -125,14 +146,20 @@
                 <div class="slide">
                     <div class="relative block lg:flex items-center bg-gray-100 shadow-xl my-6 lg:h-slider2">
                         <div class="relative w-full lg:w-2/5 h-full overflow-hidden" style="min-height: 20rem;">
-                            <img class="absolute inset-0 w-full h-full object-cover object-center" src="/public/images/tratamientos.png" alt="">
+                            <img class="absolute inset-0 w-full h-full object-cover object-center"
+                                src="/public/images/tratamientos.png" alt="">
                         </div>
                         <div class="w-full lg:w-3/5 h-full flex items-center bg-gray-100">
                             <div class="p-12 md:pr-24 md:pl-16">
                                 <p class="text-gray-700">
-                                    A pesar de que el melanoma es el tipo de cáncer de piel más peligroso, en la actualidad existen nuevas opciones de tratamientos que han demostrado mejorar la calidad de vida e incrementar la tasa de sobrevivencia de pacientes con esta enfermedad.
+                                    A pesar de que el melanoma es el tipo de cáncer de piel más peligroso, en la
+                                    actualidad existen nuevas opciones de tratamientos que han demostrado mejorar la
+                                    calidad de vida e incrementar la tasa de sobrevivencia de pacientes con esta
+                                    enfermedad.
                                     <br><br>
-                                    Cuando eres diagnosticado con melanoma, las opciones de tratamientos dependerán de distintos factores como la fase de la enfermedad, el tipo de melanoma, la ubicación del tumor y tu salud en general.
+                                    Cuando eres diagnosticado con melanoma, las opciones de tratamientos dependerán de
+                                    distintos factores como la fase de la enfermedad, el tipo de melanoma, la ubicación
+                                    del tumor y tu salud en general.
                                     <br><br>
                                     <a class="flex items-baseline mt-3" href="#">
                                         <span>Opciones de tratamientos</span>
@@ -140,7 +167,8 @@
                                     </a>
                                 </p>
                             </div>
-                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
                                 <polygon points="50,0 100,0 50,100 0,100" />
                             </svg>
                         </div>
@@ -155,9 +183,12 @@
                 ¿Qué es el Melanoma?
             </h2>
             <p class="my-5 text-skin-dark-300">
-                El melanoma, melanoma maligno o melanoma cutáneo es un tipo de cáncer de piel que se origina debido al crecimiento desmedido de los melanocitos (células que producen melanina, la cual se encarga de darle color a la piel, a los ojos y al cabello. 
+                El melanoma, melanoma maligno o melanoma cutáneo es un tipo de cáncer de piel que se origina debido al
+                crecimiento desmedido de los melanocitos (células que producen melanina, la cual se encarga de darle
+                color a la piel, a los ojos y al cabello.
                 <br><br>
-                Este tipo de cáncer de piel es el menos común, sin embargo es el más agresivo ya que puede esparcirse a otros órganos rápidamente haciendo metástasis, si no es tratado a tiempo. 
+                Este tipo de cáncer de piel es el menos común, sin embargo es el más agresivo ya que puede esparcirse a
+                otros órganos rápidamente haciendo metástasis, si no es tratado a tiempo.
                 <br><br>
                 <a href="#" class="btn-link">Conoce más</a>
             </p>
@@ -225,50 +256,64 @@
         <div class="grid lg:grid grid-cols-1 lg:grid-cols-3 gap-4 w-3/4 mx-auto">
             <div class="relative mt-12 mb-6">
                 <div class="absolute -mt-6">
-                    <img src="/public/images/1_5iIJxEnJZ1TENBw1UAaD5g@2x.jpg" alt="" class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
+                    <img src="/public/images/1_5iIJxEnJZ1TENBw1UAaD5g@2x.jpg" alt=""
+                        class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
                 </div>
                 <div class="bg-white rounded-md shadow-lg pt-48 pb-5 px-5 h-full">
                     <div class="text-center h-64 overflow-scroll">
                         <h4 class="mb-4">¡Hola! soy Laura y esta es mi historia con melanoma.</h4>
                         <p class="text-gray-500 text-sm">
-                            Primero quiero contarles que esto es un experimento, nunca he sido mucho de escribir pero chance alguno de ustedes se puede sentir identificado con mi historia, es por eso que he decidido darle una oportunidad a este blog, además creo que escribir mi propia historia puede ser terapéutico, así que me estoy dando esta oportunidad como un regalo.
+                            Primero quiero contarles que esto es un experimento, nunca he sido mucho de escribir pero
+                            chance alguno de ustedes se puede sentir identificado con mi historia, es por eso que he
+                            decidido darle una oportunidad a este blog, además creo que escribir mi propia historia
+                            puede ser terapéutico, así que me estoy dando esta oportunidad como un regalo.
                         </p>
                     </div>
                     <div class="mt-5 text-center">
-                        <a href="https://medium.com/@laura.acuna.aranda/d3253f5ca40e" class="btn-link" target="_blank">Leer blog</a>
+                        <a href="https://medium.com/@laura.acuna.aranda/d3253f5ca40e" class="btn-link"
+                            target="_blank">Leer blog</a>
                     </div>
                 </div>
             </div>
             <div class="relative mt-12 mb-6">
                 <div class="absolute -mt-6">
-                    <img src="/public/images/1_89gJswhEVMhGySaOL_MqAg@2x.jpg" alt="" class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
+                    <img src="/public/images/1_89gJswhEVMhGySaOL_MqAg@2x.jpg" alt=""
+                        class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
                 </div>
                 <div class="bg-white rounded-md shadow-lg pt-48 pb-5 px-5 h-full">
                     <div class="text-center h-64 overflow-scroll">
                         <h4 class="mb-4">La peor noticia recibida, tienes melanoma.</h4>
                         <p class="text-gray-500 text-sm">
                             Les contaré un poco los antecedentes...
-Cuando iba en la Universidad me tuvieron que quitar un lunar por el pecho que era sospechoso por su color, tamaño, forma y sensación de picazón, sin embargo la conclusión fue que era un Spitz Nivo o Nevo de Spitz, es decir, un lunar benigno con muchas características similares a un melanoma o lunar maligno.
+                            Cuando iba en la Universidad me tuvieron que quitar un lunar por el pecho que era sospechoso
+                            por su color, tamaño, forma y sensación de picazón, sin embargo la conclusión fue que era un
+                            Spitz Nivo o Nevo de Spitz, es decir, un lunar benigno con muchas características similares
+                            a un melanoma o lunar maligno.
                         </p>
                     </div>
                     <div class="mt-5 text-center">
-                        <a href="https://medium.com/@laura.acuna.aranda/7c5023725391" class="btn-link" target="_blank">Leer blog</a>
+                        <a href="https://medium.com/@laura.acuna.aranda/7c5023725391" class="btn-link"
+                            target="_blank">Leer blog</a>
                     </div>
                 </div>
             </div>
             <div class="relative mt-12 mb-6">
                 <div class="absolute -mt-6">
-                    <img src="/public/images/1_zy-CTNqS9CHhMQ0kA3ysuA@2x.jpg" alt="" class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
+                    <img src="/public/images/1_zy-CTNqS9CHhMQ0kA3ysuA@2x.jpg" alt=""
+                        class="object-cover rounded-md shadow-md h-48 w-11/12 mx-auto">
                 </div>
                 <div class="bg-white rounded-md shadow-lg pt-48 pb-5 px-5 h-full">
                     <div class="text-center h-64 overflow-scroll">
                         <h4 class="mb-4">Viviendo con melanoma: Tengo melanoma, ¿Y ahora que sigue?</h4>
                         <p class="text-gray-500 text-sm">
-                            Lo que primero se debía hacer en mi caso era un PET scan para saber en dónde estaba el cáncer. (en realidad ya me habían hecho uno en México, pero era importante empezar el proceso desde cero para los doctores de aquí y por cuestiones del seguro médico).
+                            Lo que primero se debía hacer en mi caso era un PET scan para saber en dónde estaba el
+                            cáncer. (en realidad ya me habían hecho uno en México, pero era importante empezar el
+                            proceso desde cero para los doctores de aquí y por cuestiones del seguro médico).
                         </p>
                     </div>
                     <div class="mt-5 text-center">
-                        <a href="https://medium.com/@laura.acuna.aranda/14d7a673e21b" class="btn-link" target="_blank">Leer blog</a>
+                        <a href="https://medium.com/@laura.acuna.aranda/14d7a673e21b" class="btn-link"
+                            target="_blank">Leer blog</a>
                     </div>
                 </div>
             </div>
@@ -281,15 +326,17 @@ Cuando iba en la Universidad me tuvieron que quitar un lunar por el pecho que er
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-       $('#slider').slick({
-           autoplay: 0,
-           autoplaySpeed: 8000,
-           adaptiveHeight: true,
-           dots: true,
-           arrows: true,
-           prevArrow: '<button class="slick-arrow-left link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
-           nextArrow: '<button class="slick-arrow-right link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
+        $('#slider').slick({
+            autoplay: 0,
+            autoplaySpeed: 8000,
+            adaptiveHeight: true,
+            dots: true,
+            arrows: true,
+            prevArrow: '<button class="slick-arrow-left link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
+            nextArrow: '<button class="slick-arrow-right link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
         });
     </script>
+    <script src="http://localhost:8080/public/js/main.js"></script>
 </body>
+
 </html>
