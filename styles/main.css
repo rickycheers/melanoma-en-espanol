@@ -65,11 +65,29 @@ a:focus,
 }
 
 .subnav__items-container {
-    @apply text-sm leading-loose flex flex-col;
+    @apply text-sm flex flex-col;
 }
 
 .subnav__item {
-    @apply text-gray-800
+    @apply text-gray-800 pb-2;
+}
+
+.mobile-menu {}
+
+.mobile-menu .nav-item {
+    @apply block text-left text-skin-dark-200 border-b border-skin-dark-200;
+}
+
+.mobile-menu .nav-item .subnav__item {
+    @apply normal-case;
+}
+
+.mobile-menu .nav-item--active {
+    @apply bg-skin-pale-200 text-white;
+}
+
+.mobile-menu .subnav__title {
+    @apply text-skin-dark-100;
 }
 
 .hero-section {}

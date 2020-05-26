@@ -14,39 +14,20 @@
 
 <body>
     <header class="container mx-auto md:px-6">
-        <div class="logo w-64 py-6 px-4" style="width: 17rem;">
+        <div class="hidden md:block logo w-64 py-6 px-4" style="width: 17rem;">
             <img src="/public/images/melanoma-en-espanol-logo.png" alt="">
         </div>
-        <!-- responsive menu -->
-        <!-- <div class="ml-auto">
-            <button class="flex items-center px-3 py-2 border rounded" type="button">
-                <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-                </svg>
-            </button>
-            <button type="button" class="flex items-center px-3 py-2 border rounded">
-                <svg class="fill-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path>
-                </svg>
-            </button>
-        </div> -->
-        <div id="nav" class="vc bg-skin-pale-300 shadow">
-            <nav class="hidden md:block">
-                <a href="#" class="nav-item nav-item--active">Inicio</a>
-                <a href="#" class="nav-item">Misión</a>
-                <sub-menu item="melanoma">
-                    <a href="#" class="nav-item">Melanoma</a>
-                </sub-menu>
-                <a href="#" class="nav-item">Blog</a>
-                <a href="#" class="nav-item">Productos Recomendados</a>
-                <a href="#" class="nav-item">Contáctanos</a>
-            </nav>
-            <nav class="grid md:hidden grid-cols-3">
-                <a href="#" class="nav-item">Misión</a>
-                <a href="#" class="nav-item nav-item--active">Melanoma</a>
-                <a href="#" class="nav-item">Blog</a>
-            </nav>
-        </div>
+        <nav id="nav" class="vc hidden md:block bg-skin-pale-300 shadow">
+            <a href="#" class="nav-item nav-item--active">Inicio</a>
+            <a href="#" class="nav-item">Misión</a>
+            <sub-menu item="melanoma">
+                <a href="#" class="nav-item">Melanoma</a>
+            </sub-menu>
+            <a href="#" class="nav-item">Blog</a>
+            <a href="#" class="nav-item">Productos Recomendados</a>
+            <a href="#" class="nav-item">Contáctanos</a>
+        </nav>
+        <mobile-menu class="vc"></mobile-menu>
         <section class="hero-section px-6 lg:px-0 z-0">
             <div id="slider" class="relative">
                 <!-- Carousel Body -->
