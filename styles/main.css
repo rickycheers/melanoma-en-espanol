@@ -28,16 +28,20 @@ a:focus,
     @apply text-skin-dark-200 p-2 border border-skin-dark-200 rounded-md;
 }
 
+.btn-link.btn-light {
+    @apply text-skin-fair-100 border-skin-fair-100 bg-skin-fair-100;
+}
+
 .btn-link:hover {
     @apply border-skin-dark-400;
 }
 
 .nav-item {
-    @apply inline-block px-3 py-4 tracking-wide no-underline text-center text-white uppercase text-sm border-b-2 border-transparent;
+    @apply inline-block px-3 py-4 tracking-wide no-underline text-center text-skin-dark-400 uppercase text-sm border-b-2 border-transparent;
 }
 
 .nav-item:hover {
-    @apply bg-skin-pale-200 text-white;
+    @apply bg-skin-fair-100 text-white;
 }
 
 .nav-item:focus {
@@ -83,7 +87,7 @@ a:focus,
 }
 
 .mobile-menu .nav-item--active {
-    @apply bg-skin-pale-200 text-white;
+    @apply bg-skin-fair-100 text-white;
 }
 
 .mobile-menu .subnav__title {
@@ -97,6 +101,10 @@ a:focus,
 }
 
 /* slider */
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
 .slick-arrow {
     @apply absolute top-0 mt-40 bg-white rounded-full shadow-md h-12 w-12 text-2xl;
     z-index: 1;
@@ -111,6 +119,7 @@ a:focus,
     right: 0;
     @apply -mr-6;
 }
+
 
 .slick-dots {
     bottom: 30px;
