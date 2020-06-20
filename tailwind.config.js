@@ -39,6 +39,8 @@ module.exports = {
       height: {
         'slider1': '20rem',
         'slider2': '22.4rem',
+        'stats1': '260px',
+        'stats2': '380px',
         'blog': '782px'
       }
     },
