@@ -40,7 +40,7 @@ module.exports = {
         'slider1': '20rem',
         'slider2': '22.4rem',
         'stats1': '260px',
-        'stats2': '380px',
+        'stats2': '324px',
         'blog': '782px'
       }
     },
