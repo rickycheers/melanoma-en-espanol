@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>Signos del Melanoma.</h1>
     <p>
       Los lunares, llagas, protuberancias, manchas, marcas o cambios inusuales
@@ -116,8 +116,8 @@
       áreas de nuestro cuerpo. Es más común encontrar este tipo de melanomas en
       personas de piel obscura.
     </p>
-    <p>
+    <foot-note>
       https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884
-    </p>
+    </foot-note>
   </article>
 </template>

@@ -36,7 +36,9 @@ h2~p,
 h3~p,
 h4~p,
 h5~p,
-h6~p {
+h6~p,
+ul,
+ol {
     @apply mb-5;
 }
 
@@ -54,6 +56,18 @@ a:focus,
 a:focus,
 .link:focus {
     @apply outline-none shadow-outline;
+}
+
+ul {
+    @apply list-inside list-disc;
+}
+
+ul > li, ol > li {
+    @apply mb-2;
+}
+
+ol {
+    @apply list-inside list-decimal;
 }
 
 .btn-link {
@@ -152,7 +166,10 @@ a:focus,
     @apply -mr-6;
 }
 
-
 .slick-dots {
     bottom: 30px;
+}
+
+article {
+    @apply pt-8 px-12;
 }

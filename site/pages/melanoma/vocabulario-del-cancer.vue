@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>Vocabulario del Cáncer</h1>
     <dl>
       <dt>Cáncer:</dt>
@@ -120,9 +120,9 @@
         detectadas mediante otras pruebas diagnósticas.
       </dd>
     </dl>
-    <p>
+    <foot-note>
       https://www.cancer.org/es/cancer/aspectos-basicos-sobre-el-cancer/que-es-el-cancer.html
       https://www.cancer.net/es/desplazarse-por-atenci%C3%B3n-del-c%C3%A1ncer/conceptos-b%C3%A1sicos-sobre-el-c%C3%A1ncer/t%C3%A9rminos-relativos-al-c%C3%A1ncer
-    </p>
+    </foot-note>
   </article>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>Factores de Riesgo del Melanoma.</h1>
     <p>
       Un factor de riesgo es todo aquello que aumenta el riesgo de padecer una
@@ -150,9 +150,9 @@
       descubrir el cáncer en etapa temprana, cuando es probable que sea más
       fácil de tratar.
     </p>
-    <p>
+    <foot-note>
       https://www.cancer.org/es/cancer/cancer-de-piel-tipo-melanoma/causas-riesgos-prevencion/factores-de-riesgo.html
       https://www.mayoclinic.org/es-es/diseases-conditions/melanoma/symptoms-causes/syc-20374884
-    </p>
+    </foot-note>
   </article>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>Prevención del Melanoma</h1>
     <p>
       No hay una forma segura de prevenir el melanoma, algunos factores de
@@ -245,11 +245,11 @@
       mensuales de la piel, y visitar a un dermatólogo una vez al año o más
       frecuentemente si ellos lo aconsejan.
     </p>
-    <p>
+    <foot-note>
       https://www.cancer.org/cancer/melanoma-skin-cancer/causes-risks-prevention/prevention.html
       https://www.cancer.net/navigating-cancer-care/prevention-and-healthy-living/protecting-your-skin-sun
       https://www.skincancer.org/skin-cancer-prevention/
       https://www..oaimatmelanomarg/prevention/
-    </p>
+    </foot-note>
   </article>
 </template>

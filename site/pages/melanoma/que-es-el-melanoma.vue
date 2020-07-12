@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>¿Qué es el Melanoma?</h1>
     <p>
       El melanoma, melanoma maligno o también conocido como melanoma cutáneo, es
@@ -34,10 +34,10 @@
       temprana de esta enfermedad, por esta razón es muy importante conocer
       nuestra piel y checarla periódicamente.
     </p>
-    <p>
+    <foot-note>
       https://melanoma.org/melanoma-education/
       https://www.skincancer.org/skin-cancer-information/melanoma/
       https://www.cancer.org/cancer/melanoma-skin-cancer/about/what-is-melanoma.html
-    </p>
+    </foot-note>
   </article>
 </template>

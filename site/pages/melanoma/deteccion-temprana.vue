@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>Detección Temprana del Melanoma.</h1>
     <p>
       Cambios en la apariencia de la piel, son indicadores importantes de que
@@ -192,10 +192,10 @@
       comparación a otras, sin embargo nadie esta exento a padecerlo, el simple
       hecho de tener piel te hace candidato a poder tener melanoma.
     </p>
-    <p>
+    <foot-note>
       https://www.skincancer.org/skin-cancer-information/melanoma/melanoma-warning-signs-and-images/
       https://www.aimatmelanoma.org/early-detection-of-melanoma/
       https://www.cancer.org/cancer/melanoma-skin-cancer/detection-diagnosis-staging/detection.html
-    </p>
+    </foot-note>
   </article>
 </template>

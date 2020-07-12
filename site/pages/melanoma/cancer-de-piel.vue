@@ -1,5 +1,5 @@
 <template>
-  <article class="py-8">
+  <article>
     <h1>¿Qué es el cáncer de piel?</h1>
     <p>
       El cáncer de piel es el crecimiento desmedido de células anormales en la
@@ -31,10 +31,10 @@
       <li>Carcinoma de Células Escamosas (no melanoma)</li>
       <li>Melanoma Maligno</li>
     </ul>
-    <p>
+    <foot-note>
       https://www.mayoclinic.org/diseases-conditions/skin-cancer/symptoms-causes/syc-20377605
       https://www.skincancer.org/skin-cancer-information/
       https://www.cancer.org/es/cancer/cancer-de-piel-de-celulas-basales-y-escamosas/acerca/que-es-cancer-de-piel-de-celulas-basales-y-escamosas.html
-    </p>
+    </foot-note>
   </article>
 </template>
