@@ -7,6 +7,7 @@ mix
         proxy: 'localhost:8080'
     })
     .postCss('styles/main.css', 'public/css', [
-        require('tailwindcss')
+        require('tailwindcss'),
+        require('autoprefixer'),
     ])
     .js('js/main.js', 'public/js/main.js');
