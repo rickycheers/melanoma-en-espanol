@@ -6,6 +6,7 @@ body {
     @apply bg-white-100;
 }
 
+/*
 h1,
 h2,
 h3,
@@ -68,6 +69,23 @@ ul > li, ol > li {
 
 ol {
     @apply list-inside list-decimal;
+}
+*/
+
+a,
+.link {
+    @apply text-skin-dark-200;
+}
+
+a:hover,
+a:focus,
+.link:hover {
+    @apply text-skin-dark-400;
+}
+
+a:focus,
+.link:focus {
+    @apply outline-none shadow-outline;
 }
 
 .btn-link {

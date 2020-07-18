@@ -50,9 +50,50 @@ module.exports = {
         'blog': '782px'
       }
     },
+    typography: theme => ({
+      default: {
+        css: {
+          color: theme('colors.gray.800'),
+          h1: {
+            fontFamily: theme('fontFamily.serif'),
+            color: theme('colors.gray.800')
+          },
+          h2: {
+            fontFamily: theme('fontFamily.serif'),
+            color: theme('colors.gray.800')
+          },
+          h3: {
+            fontFamily: theme('fontFamily.serif'),
+            color: theme('colors.skin-dark.300')
+          },
+          h4: {
+            fontFamily: theme('fontFamily.serif'),
+            color: theme('colors.skin-dark.300')
+          },
+          h5: {
+            fontFamily: theme('fontFamily.serif'),
+            color: theme('colors.skin-dark.300')
+          },
+          a: {
+            color: theme('colors.skin-dark.200'),
+            '&:hover': {
+              color: theme('colors.skin-dark.400'),
+            },
+          },
+          ul: {
+            width: "85%"
+          },
+          ol: {
+            width: "85%"
+          }
+        }
+      },
+    })
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
