@@ -1,12 +1,12 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>¿Qué es el cáncer de piel?</h1>
     <p>
       El cáncer de piel es el crecimiento desmedido de células anormales en la
       piel, generalmente se desarrolla a causa de la exposición de la piel a los
       rayos UV, generando daños irreparables en el ADN de las células, y
       ocasionando a su vez mutaciones, las cuales hacen que las células de la
-      piel se multipliquen rápidamente y formando tumores malignos.
+      piel se multipliquen rápidamente formando tumores malignos.
     </p>
     <p>
       La principal causa del cáncer de piel es la radiación ultravioleta o rayos
@@ -14,8 +14,8 @@
       al sol en algunas ocasiones.
     </p>
     <p>
-      El cáncer de piel puede ser detectado en etapas tempranas ya que en la
-      mayoría de los casos, se puede observar en la piel. Si esta enfermedad se
+      El cáncer de piel puede ser detectado en etapas tempranas, ya que en la
+      mayoría de los casos se puede observar en la piel. Si esta enfermedad se
       detecta a tiempo puede ser tratada exitosamente y con procedimientos
       relativamente sencillos.
     </p>
@@ -26,7 +26,7 @@
     <p>
       Los tipos de cáncer de piel más conocidos son:
     </p>
-    <ul>
+    <ul class="text-skin-dark-400">
       <li>Carcinoma de Células Basales (no melanoma)</li>
       <li>Carcinoma de Células Escamosas (no melanoma)</li>
       <li>Melanoma Maligno</li>

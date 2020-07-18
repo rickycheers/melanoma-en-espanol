@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>Detección Temprana del Melanoma.</h1>
     <p>
       Cambios en la apariencia de la piel, son indicadores importantes de que
@@ -25,10 +25,10 @@
       pacientes diagnosticados a tiempo, pueden disfrutar de una vida larga
       después de una sencilla cirugía.
     </p>
-    <p>
+    <h2>
       ¿Qué hacer para detectar a tiempo el melanoma?
-    </p>
-    <h4>Conoce tu piel y revísala regularmente.</h4>
+    </h2>
+    <h3>Conoce tu piel y revísala regularmente.</h3>
     <p>
       Conocer tu piel y reconocer cambios en ella, es el mejor camino para poder
       detectar el melanoma a tiempo. Revisa tu piel de pies a cabeza, una vez al
@@ -74,11 +74,20 @@
         semanas.
       </li>
     </ul>
-    <h4>No olvides la regla del ABCDE del Melanoma</h4>
+    <h3>
+      No olvides la regla del
+      <span class="text-skin-dark-400 font-bold">ABCDE</span> del Melanoma.
+    </h3>
     <p>
-      Siempre que revises tu piel ten en mente las características del ABCDE del
-      Melanoma, para que así puedas identificar fácilmente aquellos lunares o
-      manchas con estas características y de esta forma puedas monitorearlos e
+      Siempre que revises tu piel ten en mente las características del
+      <a
+        class="text-skin-dark-400 font-bold"
+        href="/documentos/ABCDE DEL MELANOMA.pdf"
+        target="_blank"
+        >ABCDE</a
+      >
+      del Melanoma, para que así puedas identificar fácilmente aquellos lunares
+      o manchas con estas características y de esta forma puedas monitorearlos e
       informar sobre estas características a tu dermatólogo.
     </p>
     <ul>
@@ -112,7 +121,7 @@
       en visitas posteriores o tomar fotos del lunar antes de realizar una
       biopsia.
     </p>
-    <h4>Mapeo de Lunares o Fotografias de Cuerpo Completo</h4>
+    <h3>Mapeo de Lunares o Fotografias de Cuerpo Completo</h3>
     <p>
       Es muy probable que si tienes antecedentes de melanoma o tienes muchos
       lunares atípicos, tu dermatólogo recomendará que tomes fotos de todos tus
@@ -124,12 +133,16 @@
       menores costos. Algunos melanomas en etapa temprana pueden mostrar signos
       o síntomas que pueden ser notables, sin embargo, no siempre es el caso.
     </p>
-    <h4>Seguir La Regla del Patito Feo</h4>
+    <h3>Seguir La Regla del Patito Feo</h3>
     <p>
-      La regla del patito feo es un método utilizado para detectar a tiempo el
-      melanoma, junto con la regla del ABCDE del melanoma. Es una herramienta
-      recomendada para todos aquellos que tienen uno o varios factores de riesgo
-      del melanoma.
+      La regla del
+      <a href="/documentos/LA REGLA DEL PATITO FEO.pdf" target="_blank"
+        >patito feo</a
+      >
+      es un método utilizado para detectar a tiempo el melanoma, junto con la
+      regla del <span class="text-skin-dark-400 font-bold">ABCDE</span> del
+      melanoma. Es una herramienta recomendada para todos aquellos que tienen
+      uno o varios factores de riesgo del melanoma.
     </p>
     <p>
       Esta regla se basa en el hecho de que los lunares normales se parecen
@@ -162,17 +175,14 @@
       posteriormente para descartar cualquier tipo de cáncer de piel, incluyendo
       el melanoma.
     </p>
-    <p>
-      https://www.skincancer.org/skin-cancer-information/melanoma/melanoma-warning-signs-and-images/#:~:text=The%20Ugly%20Duckling%20is%20another,like%20ugly%20ducklings%20in%20comparison.
-    </p>
-    <h4>Confía en tu instinto cuando te dice que algo esta mal</h4>
+    <h3>Confía en tu instinto cuando te dice que algo esta mal</h3>
     <p>
       El melanoma es muy peligroso una vez que se diagnostica en etapa avanzada,
       es por esto que vale la pena seguir tu instinto y visitar a tu doctor
       cuando tienes alguna duda o preocupación respecto a tu piel. Más vale
       prevenir que lamentar.
     </p>
-    <h4>Si tuviste melanoma anteriormente</h4>
+    <h3>Si tuviste melanoma anteriormente</h3>
     <p>
       No olvides visitar periódicamente a tu oncólogo y dermatólogo, una vez que
       terminaste el tratamiento. Es importante que te tengan monitoreado para
@@ -192,8 +202,22 @@
       comparación a otras, sin embargo nadie esta exento a padecerlo, el simple
       hecho de tener piel te hace candidato a poder tener melanoma.
     </p>
+    <h5>Documentos</h5>
+    <ul>
+      <li>
+        <a href="/documentos/LA REGLA DEL PATITO FEO.pdf" target="_blank"
+          >La Regla del Patito Feo <i class="fa fa-file-pdf ml-2"></i
+        ></a>
+      </li>
+      <li>
+        <a href="/documentos/ABCDE DEL MELANOMA.pdf" target="_blank"
+          >ABCDE del Melanoma <i class="fa fa-file-pdf ml-2"></i
+        ></a>
+      </li>
+    </ul>
     <foot-note>
       https://www.skincancer.org/skin-cancer-information/melanoma/melanoma-warning-signs-and-images/
+      https://www.skincancer.org/skin-cancer-information/melanoma/melanoma-warning-signs-and-images/#uglyduckling
       https://www.aimatmelanoma.org/early-detection-of-melanoma/
       https://www.cancer.org/cancer/melanoma-skin-cancer/detection-diagnosis-staging/detection.html
     </foot-note>
