@@ -1,9 +1,9 @@
 <template>
-    <div class="foot-note mt-10 pt-5 border-t border-gray-500">
+    <div class="foot-note mt-10 pt-5 border-t border-gray-500 prose prose-sm max-w-none">
         <h4>Referencias</h4>
-        <ol title="Referencias" name="referencias" class="text-xs list-inside list-decimal">
+        <ol title="Referencias" name="referencias" class="">
             <li v-for="(item, index) in items" :key="index">
-                <a :href="item" :name="'referencia-' + (index + 1)" target="_blank" class="pl-1">{{ item }}</a>
+                <a :href="item" :name="'referencia-' + (index + 1)" target="_blank">{{ item }}</a>
             </li>
         </ol>
     </div>
