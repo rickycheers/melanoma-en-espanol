@@ -27,6 +27,9 @@
       protegernos todos los días.Una forma de hacerlo es utilizando bloqueador
       solar todos los días, re-aplicando cada 2 horas.
     </p>
+    <p>
+      <img src="/images/prevencion-1.png" loading="lazy" />
+    </p>
     <h3>Busca la sombra cuando estás en el exterior.</h3>
     <p>
       Una forma obvia de limitar la exposición al sol es evitando estar en el
@@ -45,6 +48,9 @@
       En caso de estar en el exterior, protegerte del sol bajo la sombra es una
       de las mejores alternativas que debes seguir si quieres evitar la
       exposición a los rayos UV.
+    </p>
+    <p>
+      <img src="/images/prevencion-2.png" loading="lazy" />
     </p>
     <h3>Protege tu piel con ropa</h3>
     <p>
@@ -70,6 +76,9 @@
       tipo de prendas tienen etiquetas en donde dice el factor de protección
       solar que tienen, así como en los bloqueadores solares.
     </p>
+    <p>
+      <img src="/images/prevencion-3.png" loading="lazy" />
+    </p>
     <h3>Utiliza sombreros y sombrillas</h3>
     <p>
       Aún en el interior, los rayos UV pueden pasar a través de las ventanas de
@@ -88,6 +97,9 @@
       Si no tienes un sombrero de ala ancha, puedes hacerlo tú, utilizando tela
       o una bandana que protege tu piel debajo de la gorra normal.
     </p>
+    <p>
+      <img src="/images/prevencion-4.png" loading="lazy" />
+    </p>
     <h3>Utiliza lentes de sol</h3>
     <p>
       Utilizar lentes de sol con protección solar es una buena estrategia para
@@ -98,6 +110,9 @@
       Fíjate en la etiqueta antes de comprarlos. No porque los lentes sean más
       obscuros significa, que protegen mejor, realmente el nivel de protección
       viene de un químico transparente que aplican a los lentes.
+    </p>
+    <p>
+      <img src="/images/prevencion-5.png" loading="lazy" />
     </p>
     <h3>Evita broncearte, usar camas de bronceado o lámparas de sol.</h3>
     <p>
