@@ -1,10 +1,8 @@
 <template>
   <div class="mobile-menu block md:hidden mb-24 md:mb-0">
-    <div
-      class="h-24 fixed inset-0 z-30 bg-white flex items-center justify-between border-b-2"
-    >
+    <div class="h-24 fixed inset-0 z-30 bg-white flex items-center justify-between border-b-2">
       <div class="w-1/2 m-6">
-        <img src="/public/images/melanoma-en-espanol-logo.png" alt="" />
+        <img src="/public/images/melanoma-en-espanol-logo.png" alt />
       </div>
       <div class="mr-3">
         <button
@@ -14,12 +12,8 @@
           id="sidebar-open"
           class="text-gray-500 focus:outline-none focus:text-gray-700 flex p-2 items-center lg:hidden border rounded-md"
         >
-          <svg
-            class="fill-current w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
         </button>
         <button
@@ -29,14 +23,10 @@
           id="sidebar-close"
           class="text-gray-500 focus:outline-none focus:text-gray-700 flex p-2 items-center lg:hidden border rounded-md"
         >
-          <svg
-            class="fill-current w-4 h-4"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
+          <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path
               d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
-            ></path>
+            />
           </svg>
         </button>
       </div>
@@ -58,13 +48,13 @@
             <div class="w-1/3">
               <div class="subnav__title">Prevención</div>
               <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Cáncer de Piel</a>
-                <a href="#" class="subnav__item">Melanoma</a>
-                <a href="#" class="subnav__item">Signos del Melanoma</a>
-                <a href="#" class="subnav__item">Factores de Riesgo</a>
-                <a href="#" class="subnav__item">Detección Temprana</a>
-                <a href="#" class="subnav__item">Guía de Prevención</a>
-                <a href="#" class="subnav__item">Estadísticas</a>
+                <a href="/melanoma/cancer-de-piel" class="subnav__item">Cáncer de Piel</a>
+                <a href="/melanoma/que-es-el-melanoma" class="subnav__item">Melanoma</a>
+                <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
+                <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
+                <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
+                <a href="/melanoma/prevencion-del-melanoma" class="subnav__item">Prevención del Melanoma</a>
+                <a href="/melanoma/vocabulario-del-cancer" class="subnav__item">Vocabulario del Cáncer</a>
               </div>
             </div>
             <div class="w-1/3">

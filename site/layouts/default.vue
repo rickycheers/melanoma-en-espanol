@@ -47,13 +47,13 @@
             <div class="">
               <div class="subnav__title">Prevención</div>
               <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Cáncer de Piel</a>
-                <a href="#" class="subnav__item">Melanoma</a>
-                <a href="#" class="subnav__item">Signos del Melanoma</a>
-                <a href="#" class="subnav__item">Factores de Riesgo</a>
-                <a href="#" class="subnav__item">Detección Temprana</a>
-                <a href="#" class="subnav__item">Guía de Prevención</a>
-                <a href="#" class="subnav__item">Estadísticas</a>
+                <a href="/melanoma/cancer-de-piel" class="subnav__item">Cáncer de Piel</a>
+                <a href="/melanoma/que-es-el-melanoma" class="subnav__item">Melanoma</a>
+                <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
+                <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
+                <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
+                <a href="/melanoma/prevencion-del-melanoma" class="subnav__item">Prevención del Melanoma</a>
+                <a href="/melanoma/vocabulario-del-cancer" class="subnav__item">Vocabulario del Cáncer</a>
               </div>
             </div>
             <div class="">
