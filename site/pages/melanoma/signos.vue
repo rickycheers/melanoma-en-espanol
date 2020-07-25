@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>Signos del Melanoma.</h1>
     <p>
       Los lunares, llagas, protuberancias, manchas, marcas o cambios inusuales
@@ -7,14 +7,10 @@
       melanoma u otro tipo de cáncer de piel, o una advertencia de que podría
       convertiste en cáncer de piel.
     </p>
-    <p>
-      Los primeros signos y síntomas frecuentemente son:
-    </p>
+    <p>Los primeros signos y síntomas frecuentemente son:</p>
     <ul>
       <li>Cambios en lunares ya existentes</li>
-      <li>
-        Desarrollo de un nuevo lunar, mancha o un aspecto inusual en la piel.
-      </li>
+      <li>Desarrollo de un nuevo lunar, mancha o un aspecto inusual en la piel.</li>
     </ul>
     <p>
       Pero el melanoma no siempre comienza a partir de un lunar, también puede
@@ -41,35 +37,88 @@
     <p>
       Para ayudarte a identificar las características de lunares inusuales que
       pudieran indicar melanoma u otro tipo de cáncer de piel, debes conocer la
-      regla del <strong>ABCDE del melanoma</strong>.
+      regla del
+      <a
+        href="/documentos/La Regla del ABCDE del Melanoma.pdf"
+        target="_blank"
+      >ABCDE del melanoma</a>.
     </p>
-    <ul>
+    <ul class="list-none">
       <li>
-        <strong>A</strong> - significa que la forma del lunar es asimétrico, es
-        decir, que tiene una forma irregular, es decir, si partieras el lunar a
-        la mitad, notarías que cada mitad es diferente a la otra, en cuanto a su
-        forma.
+        <div class="flex flex-wrap md:flex-no-wrap items-center w-full">
+          <img
+            src="/images/a.png"
+            class="block w-1/2 sm:w-24 mx-auto"
+            style="margin-top: 0; margin-bottom: 0;"
+          />
+          <div class="ml-5">
+            Significa que la forma del lunar es
+            <strong class="underline">asimétrico</strong>, es
+            decir, que tiene una forma irregular, es decir, si partieras el lunar a
+            la mitad, notarías que cada mitad es diferente a la otra, en cuanto a su
+            forma.
+          </div>
+        </div>
       </li>
       <li>
-        <strong>B</strong> - significa que el lunar tiene bordes irregulares, es
-        decir, que los bordes no son definidos.
+        <div class="flex flex-wrap md:flex-no-wrap items-center w-full">
+          <img
+            src="/images/b.png"
+            class="block w-1/2 sm:w-24 mx-auto"
+            style="margin-top: 0; margin-bottom: 0;"
+          />
+          <div class="ml-5">
+            Significa que el lunar tiene
+            <strong class="underline">bordes</strong> irregulares, es decir, que los bordes no están bien definidos.
+          </div>
+        </div>
       </li>
       <li>
-        <strong>C</strong> - se refiere al cambio de color, este tipo de lunares
-        tienen más de un color. Busca manchas o lunares que tengan muchos
-        colores o una distribución desigual del color.
+        <div class="flex flex-wrap md:flex-no-wrap items-center w-full">
+          <img
+            src="/images/c.png"
+            class="block w-1/2 sm:w-24 mx-auto"
+            style="margin-top: 0; margin-bottom: 0;"
+          />
+          <div class="ml-5">
+            Se refiere al cambio de
+            <strong class="underline">color</strong>, este tipo de lunares
+            tienen más de un color. Busca manchas o lunares que tengan muchos
+            colores o una distribución desigual del color.
+          </div>
+        </div>
       </li>
       <li>
-        <strong>D</strong> - se refiere al diámetro del lunar, es cuando el
-        diámetro es igual o mayor a los 6mm. Una referencia fácil de recordar es
-        el tamaño de la goma de un lápiz, cuando el lunar es mayor a esta,
-        significa que rebasa los 6mm.
+        <div class="flex flex-wrap md:flex-no-wrap items-center w-full">
+          <img
+            src="/images/d.png"
+            class="block w-1/2 sm:w-24 mx-auto"
+            style="margin-top: 0; margin-bottom: 0;"
+          />
+          <div class="ml-5">
+            Se refiere al
+            <strong class="underline">diámetro</strong> del lunar, es cuando el
+            diámetro es igual o mayor a los 6mm. Una referencia fácil de recordar es
+            el tamaño de la goma de un lápiz, cuando el lunar es mayor a esta,
+            significa que rebasa los 6mm.
+          </div>
+        </div>
       </li>
       <li>
-        <strong>E</strong> - esta letra se refiere a la evolución o cambio del
-        lunar o mancha. Fíjate en cambios de forma, color, textura, o tamaño del
-        lunar a través del tiempo. Los lunares también pueden cambiar y
-        desarrollar nuevos síntomas o signos como comezón y sangrado.
+        <div class="flex flex-wrap md:flex-no-wrap items-center w-full">
+          <img
+            src="/images/e.png"
+            class="block w-1/2 sm:w-24 mx-auto"
+            style="margin-top: 0; margin-bottom: 0;"
+          />
+          <div class="ml-5">
+            Esta letra se refiere a la
+            <strong class="underline">evolución</strong> o cambio del
+            lunar o mancha. Fíjate en cambios de forma, color, textura, o tamaño del
+            lunar a través del tiempo. Los lunares también pueden cambiar y
+            desarrollar nuevos síntomas o signos como comezón y sangrado.
+          </div>
+        </div>
       </li>
     </ul>
     <p>
@@ -86,9 +135,7 @@
         Una herida que no sana Propagación del color desde el borde de una
         mancha o lunar, hasta la piel que lo rodea.
       </li>
-      <li>
-        Enrojecimiento o hinchazón más allá del borde de un lunar existente.
-      </li>
+      <li>Enrojecimiento o hinchazón más allá del borde de un lunar existente.</li>
       <li>
         Cambios en la sensación, como picazón, sensibilidad o dolor en un lunar
         o mancha. Cambio en la superficie de un lunar: descamación, exudación,
@@ -116,8 +163,15 @@
       áreas de nuestro cuerpo. Es más común encontrar este tipo de melanomas en
       personas de piel obscura.
     </p>
-    <foot-note>
-      https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884
-    </foot-note>
+    <h5>Documentos</h5>
+    <ul>
+      <li>
+        <a href="/documentos/La Regla del ABCDE del Melanoma.pdf" target="_blank">
+          ABACDE del Melanoma
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
+      </li>
+    </ul>
+    <foot-note>https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884</foot-note>
   </article>
 </template>

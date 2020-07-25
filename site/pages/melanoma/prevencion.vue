@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>Prevención del Melanoma</h1>
     <p>
       No hay una forma segura de prevenir el melanoma, algunos factores de
@@ -7,10 +7,16 @@
       controlar, sin embargo, hay cosas que podemos hacer que pueden disminuir
       el riesgo de tener melanoma u otro tipo de cáncer en la piel.
     </p>
-    <h3>
-      Esta es la guía de prevención del melanoma:
-    </h3>
-    <h4>Limita tu exposición al sol y a los rayos ultravioleta (UV)</h4>
+    <h2>
+      Esta es la guía de prevención del melanoma
+      <a
+        href="/documentos/Guía de Prevención del Melanoma.pdf"
+        target="_blank"
+      >
+        <i class="fa fa-file-pdf ml-2"></i>
+      </a>
+    </h2>
+    <h3>Limita tu exposición al sol y a los rayos ultravioleta (UV)</h3>
     <p>
       Este es una de las mejores formas que pueden ayudar a disminuir el riesgo
       de tener melanoma. Protégete del sol siempre que estés en el exterior.
@@ -21,9 +27,7 @@
       protegernos todos los días.Una forma de hacerlo es utilizando bloqueador
       solar todos los días, re-aplicando cada 2 horas.
     </p>
-    <h4>
-      Busca la sombra cuando estás en el exterior.
-    </h4>
+    <h3>Busca la sombra cuando estás en el exterior.</h3>
     <p>
       Una forma obvia de limitar la exposición al sol es evitando estar en el
       exterior por un periodo largo de tiempo, especialmente entre las 10am y
@@ -42,7 +46,7 @@
       de las mejores alternativas que debes seguir si quieres evitar la
       exposición a los rayos UV.
     </p>
-    <h4>Protege tu piel con ropa</h4>
+    <h3>Protege tu piel con ropa</h3>
     <p>
       Si vas a estar en el sol utiliza ropa y accesorios como barrera de
       protección contra los rayos UV. Utiliza playeras de manga larga, sombreros
@@ -66,9 +70,7 @@
       tipo de prendas tienen etiquetas en donde dice el factor de protección
       solar que tienen, así como en los bloqueadores solares.
     </p>
-    <h4>
-      Utiliza sombreros y sombrillas
-    </h4>
+    <h3>Utiliza sombreros y sombrillas</h3>
     <p>
       Aún en el interior, los rayos UV pueden pasar a través de las ventanas de
       tu casa, oficina o coche. Normalmente la mayoría de las ventanas bloquean
@@ -76,9 +78,7 @@
       por esto que es importante proteger tu piel en todo momento, en especial
       cuando estas en el exterior.
     </p>
-    <p>
-      Utilizar sombrillas y sombreros puede ser un buen métodos de protección.
-    </p>
+    <p>Utilizar sombrillas y sombreros puede ser un buen métodos de protección.</p>
     <p>
       Un sombrero de ala ancha es una opción ideal para proteger tu piel del
       sol, ya que protege tu cara, ojos, orejas, nariz, cuero cabelludo y
@@ -88,9 +88,7 @@
       Si no tienes un sombrero de ala ancha, puedes hacerlo tú, utilizando tela
       o una bandana que protege tu piel debajo de la gorra normal.
     </p>
-    <h4>
-      Utiliza lentes de sol
-    </h4>
+    <h3>Utiliza lentes de sol</h3>
     <p>
       Utilizar lentes de sol con protección solar es una buena estrategia para
       proteger nuestros ojos y la piel delicada que los rodea.
@@ -101,9 +99,7 @@
       obscuros significa, que protegen mejor, realmente el nivel de protección
       viene de un químico transparente que aplican a los lentes.
     </p>
-    <h4>
-      Evita broncearte, usar camas de bronceado o lámparas de sol.
-    </h4>
+    <h3>Evita broncearte, usar camas de bronceado o lámparas de sol.</h3>
     <p>
       Una piel bronceada no es una piel sana, más bien son tus células
       defendiéndose de los rayos UV.
@@ -116,9 +112,7 @@
       organizaciones de salud no recomiendan el uso de las camas de bronceado y
       lámparas solares.
     </p>
-    <h4>
-      Protege a los niños del sol en el exterior.
-    </h4>
+    <h3>Protege a los niños del sol en el exterior.</h3>
     <p>
       Los niños necesita atención especial, pues normalmente pasan gran parte
       del tiempo al aire libre y no son conscientes del peligro. Los padres
@@ -140,26 +134,22 @@
       sol directa, deben utilizar sombreros y ropa protectora como barrera
       contra los rayos UV.
     </p>
-    <h4>
-      Conoce tu piel e identifica lunares o manchas sospechosas
-    </h4>
+    <h3>Conoce tu piel e identifica lunares o manchas sospechosas</h3>
     <p>
       Revisar tu piel regularmente ( una vez al mes) puede ayudar a detectar a
       tiempo cualquier nuevo lunar o lunares sospechosos, así como cualquier
       crecimiento anormal en tu cuerpo. Revisa cada zona de tu cuerpo, desde la
       cabeza hasta los pies.
     </p>
-    <h4>
+    <h3>
       Visita a un dermatólogo una vez al año, o en cuanto tengas alguna sospecha
       de algún lunar o mancha nueva o existente y que ha cambiado.
-    </h4>
+    </h3>
     <p>
       Las visitas de rutina con un dermatólogo y la auto exploración de la piel
       son recomendadas para todos.
     </p>
-    <h4>
-      Utiliza bloqueador solar diariamente
-    </h4>
+    <h3>Utiliza bloqueador solar diariamente</h3>
     <p>
       El protector o bloqueador solar es un producto que se aplica en la piel
       con el objetivo de portejerla contra los rayos UV, sin embargo, es
@@ -179,7 +169,7 @@
       son:
     </p>
     <ul>
-      <li>Que tenga un Factor de Protección Solar(FPS) mayor o igual a 30.</li>
+      <li>Que tenga un Factor de Protección Solar (FPS) mayor o igual a 30.</li>
       <li>
         Que sea un protector de amplio espectro y proteja contra los rayos UVA y
         UVB.
@@ -228,7 +218,7 @@
       de bronceado, sin embargo una recomendación es aplicar bloqueador en las
       manos antes de utilizar ese tipo de lámpara.
     </p>
-    <h4>Efectos secundarios de medicinas.</h4>
+    <h3>Efectos secundarios de medicinas.</h3>
 
     <p>
       Algunas medicines pueden provocar mayor sensibilidad en la piel, cuando
@@ -236,15 +226,28 @@
       anti-inflamatorios, anti-hongos, medicinas para la presión de la sangre y
       algunos tipos de quimioterapias.
     </p>
-    <p>
-      La detección temprana empieza en ti. Nadie conoce mejor tu cuerpo.
-    </p>
+    <p>La detección temprana empieza en ti. Nadie conoce mejor tu cuerpo.</p>
     <p>
       Utilizar protección solar desde una edad pequeña es la defensa más potente
       contra el cáncer de piel. También es importante realizarte auto chequeos
       mensuales de la piel, y visitar a un dermatólogo una vez al año o más
       frecuentemente si ellos lo aconsejan.
     </p>
+    <h5>Documentos</h5>
+    <ul>
+      <li>
+        <a href="/documentos/Guía de Prevención del Melanoma.pdf" target="_blank">
+          Guía de Prevención del Melanoma
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/documentos/Tips de Prevención del Melanoma.pdf" target="_blank">
+          Tips de Prevención del Melanoma
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
+      </li>
+    </ul>
     <foot-note>
       https://www.cancer.org/cancer/melanoma-skin-cancer/causes-risks-prevention/prevention.html
       https://www.cancer.net/navigating-cancer-care/prevention-and-healthy-living/protecting-your-skin-sun

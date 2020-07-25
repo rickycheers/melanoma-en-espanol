@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>Vocabulario del Cáncer</h1>
     <dl>
       <dt>Cáncer:</dt>
@@ -44,9 +44,7 @@
         evaluar células, tejidos y órganos para diagnosticar enfermedades.
       </dd>
       <dt>Quimioterapia:</dt>
-      <dd>
-        Tipos de medicamentos utilizados para tratar distintos tipos de cáncer.
-      </dd>
+      <dd>Tipos de medicamentos utilizados para tratar distintos tipos de cáncer.</dd>
       <dt>Radioterapia:</dt>
       <dd>
         Uso de rayos de alta energía, como los rayos X, para tratar algunos
@@ -79,8 +77,8 @@
       <dt>Remisión:</dt>
       <dd>
         Es cuando los signos o síntomas del cáncer han desaparecido parcial o
-        totalmente. En la remisión parcial, algunos de los signos y síntomas de
-        cáncer han desaparecido. En remisión completa, todos los signos y
+        totalmente. En la remisión parcial, algunos de los signos y síntomas de
+        cáncer han desaparecido. En remisión completa, todos los signos y
         síntomas de cáncer han desaparecido, aunque el cáncer todavía puede
         estar en el cuerpo.
       </dd>

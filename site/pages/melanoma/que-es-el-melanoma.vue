@@ -1,8 +1,8 @@
 <template>
-  <article>
+  <article class="prose max-w-none">
     <h1>¿Qué es el Melanoma?</h1>
     <p>
-      El melanoma, melanoma maligno o también conocido como melanoma cutáneo, es
+      El <span class="underline">melanoma</span>, <span class="underline">melanoma maligno</span> o también conocido como <span class="underline">melanoma cutáneo</span>, es
       un tipo de cáncer de piel que se origina debido al crecimiento desmedido
       de los melanocitos, células que producen melanina, la cual se encarga de
       darle color a la piel, a los ojos y al cabello.
