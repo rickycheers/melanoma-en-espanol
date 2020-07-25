@@ -25,9 +25,7 @@
       pacientes diagnosticados a tiempo, pueden disfrutar de una vida larga
       después de una sencilla cirugía.
     </p>
-    <h2>
-      ¿Qué hacer para detectar a tiempo el melanoma?
-    </h2>
+    <h2>¿Qué hacer para detectar a tiempo el melanoma?</h2>
     <h3>Conoce tu piel y revísala regularmente.</h3>
     <p>
       Conocer tu piel y reconocer cambios en ella, es el mejor camino para poder
@@ -84,8 +82,7 @@
         class="text-skin-dark-400 font-bold"
         href="/documentos/ABCDE DEL MELANOMA.pdf"
         target="_blank"
-        >ABCDE</a
-      >
+      >ABCDE</a>
       del Melanoma, para que así puedas identificar fácilmente aquellos lunares
       o manchas con estas características y de esta forma puedas monitorearlos e
       informar sobre estas características a tu dermatólogo.
@@ -96,9 +93,7 @@
         riesgo del melanoma, por lo menos una vez al año, como por ejemplo:
       </li>
       <li>Tener piel blanca, ojos claros, cabello rubio o rojizo</li>
-      <li>
-        Tener historial de varias quemaduras por la exposición al sol
-      </li>
+      <li>Tener historial de varias quemaduras por la exposición al sol</li>
       <li>Tener muchos lunares o lunares atípicos en el cuerpo o lunares</li>
       <li>
         Tener antecedentes familiares y/o personales de cáncer de piel o
@@ -136,11 +131,10 @@
     <h3>Seguir La Regla del Patito Feo</h3>
     <p>
       La regla del
-      <a href="/documentos/LA REGLA DEL PATITO FEO.pdf" target="_blank"
-        >patito feo</a
-      >
+      <a href="/documentos/LA REGLA DEL PATITO FEO.pdf" target="_blank">patito feo</a>
       es un método utilizado para detectar a tiempo el melanoma, junto con la
-      regla del <span class="text-skin-dark-400 font-bold">ABCDE</span> del
+      regla del
+      <span class="text-skin-dark-400 font-bold">ABCDE</span> del
       melanoma. Es una herramienta recomendada para todos aquellos que tienen
       uno o varios factores de riesgo del melanoma.
     </p>
@@ -159,9 +153,7 @@
     </p>
     <ul>
       <li>Un lunar o mancha que es más grande o más pequeña que el resto</li>
-      <li>
-        Un lunar o mancha que es más clara u obscura en comparación al resto
-      </li>
+      <li>Un lunar o mancha que es más clara u obscura en comparación al resto</li>
       <li>
         Lesiones o manchas las cuales no estén rodeadas de lunares, es decir,
         lesiones o manchas que se encuentren solas.
@@ -205,14 +197,16 @@
     <h5>Documentos</h5>
     <ul>
       <li>
-        <a href="/documentos/LA REGLA DEL PATITO FEO.pdf" target="_blank"
-          >La Regla del Patito Feo <i class="fa fa-file-pdf ml-2"></i
-        ></a>
+        <a href="/documentos/La Regla del Patito Feo.pdf" target="_blank">
+          La Regla del Patito Feo
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
       </li>
       <li>
-        <a href="/documentos/ABCDE DEL MELANOMA.pdf" target="_blank"
-          >ABCDE del Melanoma <i class="fa fa-file-pdf ml-2"></i
-        ></a>
+        <a href="/documentos/ABCDE del Melanoma.pdf" target="_blank">
+          ABCDE del Melanoma
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
       </li>
     </ul>
     <foot-note>

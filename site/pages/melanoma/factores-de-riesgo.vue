@@ -9,9 +9,10 @@
     </p>
     <p>
       Estos son los
-      <a href="/documentos/FACTORES DE RIESGO DEL MELANOMA.pdf" target="_blank"
-        >factores de riesgo</a
-      >
+      <a
+        href="/documentos/Facdtores de Riesgo del Melanoma.pdf"
+        target="_blank"
+      >factores de riesgo</a>
       que pueden aumentar la probabilidad de padecer melanoma en algún momento
       de tu vida.
     </p>
@@ -152,11 +153,10 @@
     <h5>Documentos</h5>
     <ul>
       <li>
-        <a
-          href="/documentos/FACTORES DE RIESGO DEL MELANOMA.pdf"
-          target="_blank"
-          >Factores de Riesgo del Melanoma <i class="fa fa-file-pdf ml-2"></i
-        ></a>
+        <a href="/documentos/Factores de Riesgo del Melanoma.pdf" target="_blank">
+          Factores de Riesgo del Melanoma
+          <i class="fa fa-file-pdf ml-2"></i>
+        </a>
       </li>
     </ul>
     <foot-note>
