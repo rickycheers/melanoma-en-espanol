@@ -34,6 +34,9 @@
       temprana de esta enfermedad, por esta razón es muy importante conocer
       nuestra piel y checarla periódicamente.
     </p>
+    <p>
+      <img src="/images/melanomaenpiel.png" alt="Melanoma en Piel">
+    </p>
     <foot-note>
       https://melanoma.org/melanoma-education/
       https://www.skincancer.org/skin-cancer-information/melanoma/
