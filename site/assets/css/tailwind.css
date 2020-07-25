@@ -191,3 +191,11 @@ a:focus,
 article {
     @apply pt-8 px-12;
 }
+
+dt {
+    @apply text-skin-dark-300 font-bold text-lg mb-3;
+}
+
+dd {
+    @apply mb-3;
+}
