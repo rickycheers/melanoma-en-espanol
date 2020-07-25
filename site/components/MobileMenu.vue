@@ -37,7 +37,7 @@
     >
       <div class="h-full overflow-y-scroll">
         <div class="nav-item nav-item--active">
-          <a href="#">Inicio</a>
+          <a href="/">Inicio</a>
         </div>
         <div class="nav-item">
           <a href="#">Misión</a>
@@ -53,8 +53,14 @@
                 <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
                 <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
                 <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
-                <a href="/melanoma/prevencion-del-melanoma" class="subnav__item">Prevención del Melanoma</a>
-                <a href="/melanoma/vocabulario-del-cancer" class="subnav__item">Vocabulario del Cáncer</a>
+                <a
+                  href="/melanoma/prevencion-del-melanoma"
+                  class="subnav__item"
+                >Prevención del Melanoma</a>
+                <a
+                  href="/melanoma/vocabulario-del-cancer"
+                  class="subnav__item"
+                >Vocabulario del Cáncer</a>
               </div>
             </div>
             <div class="w-1/3">

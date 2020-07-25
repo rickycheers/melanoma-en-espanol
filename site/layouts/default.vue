@@ -5,7 +5,7 @@
         <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
       <nav id="nav" class="vc px-5 hidden md:block bg-skin-fair-200 shadow">
-        <a href="#" class="nav-item nav-item--active">Inicio</a>
+        <a href="/" class="nav-item nav-item--active">Inicio</a>
         <a href="#" class="nav-item">Misión</a>
         <sub-menu item="melanoma">
           <a href="#" class="nav-item">Melanoma</a>
@@ -85,7 +85,7 @@
       </div>
       <div class="block md:inline text-xs text-center md:float-right">
         <a href="#" class="text-gray-800">Aviso de Privacidad</a> &CenterDot;
-        <a href="#" class="text-gray-800">Términos y Condiciones</a>
+        <a href="/terminos-y-condiciones" class="text-gray-800">Términos y Condiciones</a>
       </div>
       <p class="mt-5 w-full md:w-3/4 m-auto text-xs text-gray-600 text-center">
         Esta información no está diseñada para remplazar una consulta, un
