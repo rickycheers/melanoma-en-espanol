@@ -26,6 +26,9 @@
       embargo, tampoco las personas con tez obscura están exentas de tener
       melanoma.
     </p>
+    <p>
+      <img src="/images/factores-de-riesgo-1.png" loading="lazy" />
+    </p>
     <h3>Antecedentes de quemaduras causadas por el sol.</h3>
     <p>
       Una o más quemaduras solares graves con ampollas pueden aumentar el riesgo
@@ -33,11 +36,17 @@
       quemaduras causadas por el sol, pueden duplicar la probabilidad de padecer
       esta enfermedad en un futuro.
     </p>
+    <p>
+      <img src="/images/factores-de-riesgo-2.png" loading="lazy" />
+    </p>
     <h3>Camas de Bronceado.</h3>
     <p>
       Las personas que usan camas de bronceado y lámparas de sol, tienen un
       mayor riesgo de desarrollar cualquier tipo de cáncer de piel, incluyendo
       el melanoma.
+    </p>
+    <p>
+      <img src="/images/factores-de-riesgo-3.png" loading="lazy" />
     </p>
     <h3>Exposición al sol o a la luz ultravioleta (UV).</h3>
     <p>
@@ -57,12 +66,18 @@
       al sol, como es el caso del melanoma lentiginoso acral y el melanoma de
       mucosa y ojos.
     </p>
+    <p>
+      <img src="/images/factores-de-riesgo-4.png" loading="lazy" />
+    </p>
     <h3>Vivir más cerca del ecuador o en una mayor altitud.</h3>
     <p>
       Las personas que viven más cerca del ecuador de la Tierra, donde los rayos
       solares son más directos, experimentan mayores cantidades de rayos UV, por
       lo tanto, existe más probabilidad de que padezcan melanoma. Además, si
       vives en una mayor altitud, también estás expuesto a más radiación UV.
+    </p>
+    <p>
+      <img src="/images/factores-de-riesgo-5.png" loading="lazy" />
     </p>
     <h3>Tener muchos lunares o lunares atípicos.</h3>
     <p>
@@ -78,6 +93,9 @@
       nunca se vuelven cancerosos, y muchos melanomas parecen originarse sin un
       lunar displásico preexistente.
     </p>
+    <p>
+      <img src="/images/factores-de-riesgo-6.png" loading="lazy" />
+    </p>
     <h3>Síndrome del nevo displásico (síndrome de lunar atípico).</h3>
     <p>
       Las personas con esta afección hereditaria tienen muchos lunares
@@ -87,6 +105,9 @@
       tienen un riesgo muy alto de por vida de padecer un melanoma, por lo que
       necesitan exámenes muy minuciosos y regulares de la piel realizados por un
       dermatólogo.
+    </p>
+    <p>
+      <img src="/images/factores-de-riesgo-7.png" loading="lazy" />
     </p>
     <h3>Antecedentes familiares de melanoma.</h3>
     <p>
@@ -99,12 +120,18 @@
       blanca, ciertos cambios genéticos (mutaciones) que son más frecuentes en
       una familia, o una combinación de estos factores.
     </p>
+    <p>
+      <img src="/images/factores-de-riesgo-8.png" loading="lazy" />
+    </p>
     <h3>Antecedente personal de melanoma u otros cánceres de piel.</h3>
     <p>
       Una persona que ha padecido melanoma tiene un mayor riesgo de padecer
       melanoma nuevamente. Las personas que han tenido cáncer de piel de células
       basales o células escamosas también están en mayor riesgo de padecer
       melanoma.
+    </p>
+    <p>
+      <img src="/images/factores-de-riesgo-9.png" loading="lazy" />
     </p>
     <h3>Sistema inmune débil.</h3>
     <p>
@@ -119,13 +146,8 @@
       VIH, el virus que causa el SIDA, a menudo tienen sistemas inmunitarios
       debilitados y también están en mayor riesgo de padecer melanoma.
     </p>
-    <h3>Algunas otras condiciones.</h3>
     <p>
-      El xeroderma pigmentoso (XP) es un padecimiento hereditario que afecta la
-      capacidad de las células de la piel de reparar el daño causado a su ADN.
-      Las personas con XP tienen un alto riesgo de melanoma y otros cánceres de
-      piel cuando son jóvenes, especialmente en áreas de la piel que han sido
-      expuestas al sol.
+      <img src="/images/factores-de-riesgo-10.png" loading="lazy" />
     </p>
     <h3>Envejecimiento.</h3>
     <p>
@@ -134,6 +156,17 @@
       embargo, el melanoma también afecta a personas más jóvenes. De hecho, el
       melanoma es uno de los cánceres más comunes en las personas que tienen
       menos de 30 años de edad.
+    </p>
+    <p>
+      <img src="/images/factores-de-riesgo-11.png" loading="lazy" />
+    </p>
+    <h3>Algunas otras condiciones.</h3>
+    <p>
+      El xeroderma pigmentoso (XP) es un padecimiento hereditario que afecta la
+      capacidad de las células de la piel de reparar el daño causado a su ADN.
+      Las personas con XP tienen un alto riesgo de melanoma y otros cánceres de
+      piel cuando son jóvenes, especialmente en áreas de la piel que han sido
+      expuestas al sol.
     </p>
     <p>
       Presentar uno, o incluso muchos de los factores de riesgo anteriores, no
