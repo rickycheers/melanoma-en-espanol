@@ -127,6 +127,9 @@
       organizaciones de salud no recomiendan el uso de las camas de bronceado y
       lámparas solares.
     </p>
+    <p>
+      <img src="/images/prevencion-6.png" loading="lazy" />
+    </p>
     <h3>Protege a los niños del sol en el exterior.</h3>
     <p>
       Los niños necesita atención especial, pues normalmente pasan gran parte
@@ -149,12 +152,18 @@
       sol directa, deben utilizar sombreros y ropa protectora como barrera
       contra los rayos UV.
     </p>
+    <p>
+      <img src="/images/prevencion-7.png" loading="lazy" />
+    </p>
     <h3>Conoce tu piel e identifica lunares o manchas sospechosas</h3>
     <p>
       Revisar tu piel regularmente ( una vez al mes) puede ayudar a detectar a
       tiempo cualquier nuevo lunar o lunares sospechosos, así como cualquier
       crecimiento anormal en tu cuerpo. Revisa cada zona de tu cuerpo, desde la
       cabeza hasta los pies.
+    </p>
+    <p>
+      <img src="/images/prevencion-8.png" loading="lazy" />
     </p>
     <h3>
       Visita a un dermatólogo una vez al año, o en cuanto tengas alguna sospecha
@@ -163,6 +172,9 @@
     <p>
       Las visitas de rutina con un dermatólogo y la auto exploración de la piel
       son recomendadas para todos.
+    </p>
+    <p>
+      <img src="/images/prevencion-9.png" loading="lazy" />
     </p>
     <h3>Utiliza bloqueador solar diariamente</h3>
     <p>
@@ -233,8 +245,10 @@
       de bronceado, sin embargo una recomendación es aplicar bloqueador en las
       manos antes de utilizar ese tipo de lámpara.
     </p>
+    <p>
+      <img src="/images/prevencion-10.png" loading="lazy" />
+    </p>
     <h3>Efectos secundarios de medicinas.</h3>
-
     <p>
       Algunas medicines pueden provocar mayor sensibilidad en la piel, cuando
       estas expuesto al sol, como pueden ser algunos antibióticos,
@@ -247,6 +261,9 @@
       contra el cáncer de piel. También es importante realizarte auto chequeos
       mensuales de la piel, y visitar a un dermatólogo una vez al año o más
       frecuentemente si ellos lo aconsejan.
+    </p>
+    <p>
+      <img src="/images/prevencion-11.png" loading="lazy" />
     </p>
     <h5>Documentos</h5>
     <ul>
