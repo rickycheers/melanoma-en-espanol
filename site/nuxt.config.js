@@ -78,10 +78,26 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    "@nuxtjs/prismic"
+  ],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  build: {},
+
+  prismic: {
+    endpoint: 'https://melanoma-espanol.cdn.prismic.io/api/v2',
+    linkResolver: '@/plugins/link-resolver',
+    htmlSerializer: '@/plugins/html-serializer',
+    apiOptions: {
+      accessToken: ''
+    }
+  },
+
+    // Netlify reads a 404.html, Nuxt will load as an SPA
+    generate: {
+      fallback: '404.html'
+    }
 };
