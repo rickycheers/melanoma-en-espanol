@@ -199,3 +199,9 @@ dt {
 dd {
     @apply mb-3;
 }
+
+/* Bloques de contenido */
+
+.texto-imagen img {
+    @apply mt-0;
+}
