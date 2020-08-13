@@ -1,19 +1,28 @@
 <template>
   <div class="container mx-auto">
+
+    <nav>
+      <ul>
+        <li v-for="seccion in secciones" :key="seccion.id" :class="seccion.type">
+          <a :href="'#'+seccion.id">{{ seccion.text }}</a>
+        </li>
+      </ul>
+    </nav>
+
     <article class="prose max-w-none">
       <h1>{{ $prismic.asText(document.data.titulo) }}</h1>
       <div v-for="(slice, index) in document.data.body" :key="index">
           <pre v-if="debug">{{ JSON.stringify(slice, null, '\t') }}</pre>
 
-          <h2 v-if="slice.slice_type == 'contenido' && slice.primary.subtitulo.length">{{ slice.primary.subtitulo[0].text }}</h2>
-          <div v-if="slice.slice_type == 'contenido' && slice.primary.contenido.length" v-html="$prismic.asHtml(slice.primary.contenido)"></div>
-          <p v-if="slice.slice_type == 'contenido' && slice.primary.imagen.url">
+          <h2 v-if="esSubtitulo(slice)" :id="generaIdSubtitulo(slice)">{{ subtitulo(slice) }}</h2>
+          <div v-if="esContenido(slice)" v-html="contenido(slice)"></div>
+          <p v-if="contenidoTieneImagen(slice)">
             <img :src="slice.primary.imagen.url + '&w=600'" :alt="slice.primary.imagen.alt" class="block mx-auto">
           </p>
 
-          <div v-if="slice.slice_type == 'texto_e_imagen'" class="texto-imagen">
+          <div v-if="esTextoImagen(slice)" class="texto-imagen">
             <img :src="slice.primary.imagen.url + '&w=800'" :alt="slice.primary.imagen.alt" :class="teiImageClasses(slice)" />
-            <div v-html="$prismic.asHtml(slice.primary.contenido)" class=""></div>
+            <div v-html="contenido(slice)" class=""></div>
           </div>
 
           <div v-if="slice.slice_type == 'bloque_de_imagenes' && slice.items.length" class="flex justify-center">
@@ -60,7 +69,36 @@ export default {
       debug: 0,
     }
   },
+  computed: {
+    secciones() {
+      return this.document.data.body.reduce((acc, slice) => {
+        if (slice.slice_type == 'contenido' && slice.primary.subtitulo.length) {
+          let objeto = slice.primary.subtitulo[0];
+          acc.push({id: this.generaIdSubtitulo(slice), ...objeto});
+        }
+        return acc;
+      }, []);
+    },
+  },
   methods: {
+    esSubtitulo(slice) {
+      return slice.slice_type == 'contenido' && slice.primary.subtitulo.length;
+    },
+    subtitulo(slice) {
+      return slice?.primary?.subtitulo[0]?.text || '';
+    },
+    esContenido(slice) {
+      return slice.slice_type == 'contenido' && slice.primary.contenido.length;
+    },
+    contenido(slice) {
+      return this.$prismic.asHtml(slice.primary.contenido);
+    },
+    contenidoTieneImagen(slice) {
+      return slice.slice_type == 'contenido' && slice.primary.imagen.url;
+    },
+    esTextoImagen(slice) {
+      return slice.slice_type == 'texto_e_imagen';
+    },
     teiImageClasses(slice) {
       let orientation = slice.primary.orden.toLocaleLowerCase() == 'imagen primero' ? 'left' : 'right';
       return [
@@ -70,6 +108,18 @@ export default {
         'mx-auto',
         orientation == 'left' ? 'md:mr-5' : 'md:ml-5',
       ].join(' ');
+    },
+    generaIdSubtitulo(slice) {
+      let caracteres = ['á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', 'ñ', 'Ñ', 'ü', 'Ü'];
+      let reemplazos = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U', 'ni', 'NI', 'u', 'U'];
+      let id = this.subtitulo(slice).trim().toLocaleLowerCase().replace(/\s+/g, '_');
+
+      for (let i = 0; i < caracteres.length; i++) {
+        let regex = new RegExp(`${caracteres[i]}`, 'g');
+        id = id.replace(regex, reemplazos[i]);
+      }
+
+      return id;
     },
   }
 };
