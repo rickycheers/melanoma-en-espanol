@@ -205,3 +205,24 @@ dd {
 .texto-imagen img {
     @apply mt-0;
 }
+
+/* Tabla de contenidos */
+.tabla-conetnidos ul li.heading2 {
+    @apply font-semibold text-sm;
+}
+
+.tabla-conetnidos ul li.heading3 {
+    @apply ml-3 font-light text-xs;
+}
+
+.tabla-conetnidos ul li.heading4 {
+    @apply ml-6 font-light text-xs;
+}
+
+.tabla-conetnidos ul li.heading5 {
+    @apply ml-8 font-light text-xs;
+}
+
+.tabla-conetnidos ul li.heading6 {
+    @apply ml-10 font-light text-xs;
+}

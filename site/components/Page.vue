@@ -1,22 +1,21 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto flex flex-col md:flex-row">
 
-    <nav>
-      <ul>
-        <li v-for="seccion in secciones" :key="seccion.id" :class="seccion.type">
-          <a :href="'#'+seccion.id">{{ seccion.text }}</a>
-        </li>
-      </ul>
-    </nav>
+    <tabla-de-contenidos
+      class="p-5 w-full md:w-1/4 md:order-last bg-skin-dark-300 border-l"
+      :secciones="secciones"
+    >
+    </tabla-de-contenidos>
 
-    <article class="prose max-w-none">
+    <article class="prose max-w-none w-full md:w-3/4">
       <h1>{{ $prismic.asText(document.data.titulo) }}</h1>
+
       <div v-for="(slice, index) in document.data.body" :key="index">
           <pre v-if="debug">{{ JSON.stringify(slice, null, '\t') }}</pre>
 
           <h2 v-if="esSubtitulo(slice)" :id="generaIdSubtitulo(slice)">{{ subtitulo(slice) }}</h2>
           <div v-if="esContenido(slice)" v-html="contenido(slice)"></div>
-          <p v-if="contenidoTieneImagen(slice)">
+          <p v-if="esImagenExtendida(slice)">
             <img :src="slice.primary.imagen.url + '&w=600'" :alt="slice.primary.imagen.alt" class="block mx-auto">
           </p>
 
@@ -93,8 +92,8 @@ export default {
     contenido(slice) {
       return this.$prismic.asHtml(slice.primary.contenido);
     },
-    contenidoTieneImagen(slice) {
-      return slice.slice_type == 'contenido' && slice.primary.imagen.url;
+    esImagenExtendida(slice) {
+      return slice.slice_type == 'imagen_extendida';
     },
     esTextoImagen(slice) {
       return slice.slice_type == 'texto_e_imagen';
