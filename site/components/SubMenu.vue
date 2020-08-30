@@ -5,7 +5,7 @@
       @mouseover="show = false"
       class="fixed w-full h-full inset-0 z-10 bg-transparent"
     ></div>
-    <div @mouseover="show = true" class="relative z-20">
+    <div @mouseover="show = true" class="relative z-20 w-">
       <slot></slot>
     </div>
     <transition
@@ -19,36 +19,12 @@
       <div class="subnav sm:block relative z-20" v-show="show">
         <div class="subnav__container">
           <div class="subnav__arrow"></div>
-          <div class="w-1/3">
-            <div class="subnav__title">Prevención</div>
+          <div v-for="(seccion, i) in secciones" :key="i" :class="claseColumna">
+            <div class="subnav__title">{{ seccion.titulo }}</div>
             <div class="subnav__items-container">
-              <a href="/melanoma/cancer-de-piel" class="subnav__item">Cáncer de Piel</a>
-              <a href="/melanoma/que-es-el-melanoma" class="subnav__item">Melanoma</a>
-              <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
-              <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
-              <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
-              <a href="/melanoma/prevencion-del-melanoma" class="subnav__item">Prevención del Melanoma</a>
-              <a href="/melanoma/vocabulario-del-cancer" class="subnav__item">Vocabulario del Cáncer</a>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div class="subnav__title">Diagnóstico</div>
-            <div class="subnav__items-container">
-              <a href="#" class="subnav__item">Tipos de Melanoma</a>
-              <a href="#" class="subnav__item">Fases del Melanoma</a>
-              <a href="#" class="subnav__item">Tratamientos</a>
-              <a href="#" class="subnav__item">Factores de Riesgo</a>
-              <a href="#" class="subnav__item">Preguntas Frecuentes</a>
-              <a href="#" class="subnav__item">Estadísticas</a>
-            </div>
-          </div>
-          <div class="w-1/3">
-            <div class="subnav__title">Viviendo con melanoma</div>
-            <div class="subnav__items-container">
-              <a href="#" class="subnav__item">Estudios Clínicos</a>
-              <a href="#" class="subnav__item">Fundaciones</a>
-              <a href="#" class="subnav__item">Cuidadores</a>
-              <a href="#" class="subnav__item">Links de Interés</a>
+              <prismic-link v-for="(item, j) in seccion.items" :key="j" :field="item.link" class="subnav__item">
+                {{ item.titulo[0].text }}
+              </prismic-link>
             </div>
           </div>
         </div>
@@ -59,10 +35,44 @@
 
 <script>
 export default {
+  props: {
+    items: {
+      type: Array,
+      required: true,
+    }
+  },
+
   data() {
     return {
       show: false,
     };
+  },
+
+  computed: {
+    secciones() {
+      let seccion = 0
+
+      return this.items
+        .reduce((acc, item) => {
+          seccion = item.separador ? seccion + 1 : seccion
+
+          if (typeof acc[seccion] === 'undefined') {
+            acc[seccion] = {titulo: item.titulo[0].text, items: []}
+            return acc;
+          }
+
+          acc[seccion].items.push(item)
+
+          return acc
+        }, [])
+        .filter(item => item !== undefined)
+    },
+
+    claseColumna() {
+      let cols = 12 % this.secciones.length === 0 ? 12 : 5
+      let tamano = cols / this.secciones.length
+      return `w-${tamano}/${cols}`
+    },
   },
 
   methods: {

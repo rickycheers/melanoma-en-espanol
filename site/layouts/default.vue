@@ -4,17 +4,7 @@
       <div class="hidden md:block logo w-64 p-5" style="width: 17rem;">
         <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
-      <nav id="nav" class="vc px-5 hidden md:block bg-skin-fair-200 shadow">
-        <a href="/" class="nav-item nav-item--active">Inicio</a>
-        <a href="#" class="nav-item">Misión</a>
-        <sub-menu item="melanoma">
-          <a href="#" class="nav-item">Melanoma</a>
-        </sub-menu>
-        <a href="#" class="nav-item">Blog</a>
-        <a href="#" class="nav-item">Productos Recomendados</a>
-        <a href="#" class="nav-item">Contáctanos</a>
-      </nav>
-      <mobile-menu class="vc"></mobile-menu>
+      <navigation-menu></navigation-menu>
     </header>
     <Nuxt />
     <footer
