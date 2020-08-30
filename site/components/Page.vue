@@ -2,7 +2,7 @@
   <div class="container mx-auto flex flex-col md:flex-row">
 
     <tabla-de-contenidos
-      class="p-5 w-full md:w-1/4 md:order-last bg-skin-dark-300 border-l"
+      class="p-5 w-full md:w-1/4 md:order-last"
       :secciones="secciones"
     >
     </tabla-de-contenidos>
