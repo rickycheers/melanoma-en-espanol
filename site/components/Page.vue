@@ -2,10 +2,10 @@
   <div class="container mx-auto flex flex-col md:flex-row">
 
     <tabla-de-contenidos
+      v-if="secciones.length"
       class="p-5 w-full md:w-1/4 md:order-last"
       :secciones="secciones"
-    >
-    </tabla-de-contenidos>
+    />
 
     <article class="prose max-w-none w-full md:w-3/4">
       <h1>{{ $prismic.asText(document.data.titulo) }}</h1>

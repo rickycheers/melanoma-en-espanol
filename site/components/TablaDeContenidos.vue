@@ -1,7 +1,7 @@
 <template>
     <section class="relative mt-8 bg-skin-dark-300 border-l h-full shadow rounded">
       <button 
-        class="absolute inline-block text-gray-500 focus:outline-none focus:text-gray-700 flex p-2 items-center lg:hidden border rounded-md"
+        class="absolute flex text-gray-500 focus:outline-none focus:text-gray-700 p-2 items-center lg:hidden border rounded-md"
         style="right: 0.75rem; margin-top: -5px;"
         @click="alternar"
       >
