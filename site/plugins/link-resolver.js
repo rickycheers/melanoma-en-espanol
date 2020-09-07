@@ -1,19 +1,15 @@
-/**
- * To learn more about Link Resolving check out the Prismic documentation
- */
+import {generarId} from '../utils.js'
 
 export default function (doc) {
     if (doc.isBroken) {
       return '/not-found'
     }
-  
-    if (doc.type === 'blog_home') {
-      return '/'
+
+    if (doc.type === 'pagina') {
+      let path = generarId(doc.tags.join("/"), '-')
+      path = path.length === 0 ? path : "/" + path
+      return path + '/' + doc.uid
     }
-  
-    if (doc.type === 'post') {
-      return '/blog/' + doc.uid
-    }
-  
+
     return '/not-found'
   }

@@ -12,9 +12,9 @@ export default {
       //   $prismic.predicates.at('my.pagina.pagina_padre', params.categoria),
       // ])
 
-      if (document.data?.pagina_padre?.uid !== params.categoria) {
-        throw "Page not found";
-      }
+      // if (document.data?.pagina_padre?.uid !== params.categoria) {
+      //   throw "Page not found";
+      // }
 
       return {
         document,

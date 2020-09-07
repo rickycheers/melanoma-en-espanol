@@ -4,7 +4,7 @@
       <div class="hidden md:block logo w-64 p-5" style="width: 17rem;">
         <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
-      <navigation-menu></navigation-menu>
+      <navegacion tipo="principal" />
     </header>
     <Nuxt />
     <footer
@@ -33,40 +33,7 @@
           </div>
         </div>
         <div class="w-full md:w-2/3 px-3">
-          <div class="block sm:grid sm:grid-cols-3">
-            <div class="">
-              <div class="subnav__title">Prevención</div>
-              <div class="subnav__items-container">
-                <a href="/melanoma/cancer-de-piel" class="subnav__item">Cáncer de Piel</a>
-                <a href="/melanoma/que-es-el-melanoma" class="subnav__item">Melanoma</a>
-                <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
-                <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
-                <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
-                <a href="/melanoma/prevencion-del-melanoma" class="subnav__item">Prevención del Melanoma</a>
-                <a href="/melanoma/vocabulario-del-cancer" class="subnav__item">Vocabulario del Cáncer</a>
-              </div>
-            </div>
-            <div class="">
-              <div class="subnav__title">Diagnóstico</div>
-              <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Tipos de Melanoma</a>
-                <a href="#" class="subnav__item">Fases del Melanoma</a>
-                <a href="#" class="subnav__item">Tratamientos</a>
-                <a href="#" class="subnav__item">Factores de Riesgo</a>
-                <a href="#" class="subnav__item">Preguntas Frecuentes</a>
-                <a href="#" class="subnav__item">Estadísticas</a>
-              </div>
-            </div>
-            <div class="">
-              <div class="subnav__title">Viviendo con melanoma</div>
-              <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Estudios Clínicos</a>
-                <a href="#" class="subnav__item">Fundaciones</a>
-                <a href="#" class="subnav__item">Cuidadores</a>
-                <a href="#" class="subnav__item">Links de Interés</a>
-              </div>
-            </div>
-          </div>
+          <navegacion tipo="subnav" menu="Melanoma" />
         </div>
       </div>
       <hr class="my-4" style="border-color: #dad1c9;" />

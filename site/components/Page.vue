@@ -56,6 +56,8 @@
 </template>
 
 <script>
+import {generarId} from '../utils.js'
+
 export default {
   props: {
     document: {
@@ -109,16 +111,7 @@ export default {
       ].join(' ');
     },
     generaIdSubtitulo(slice) {
-      let caracteres = ['á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú', 'ñ', 'Ñ', 'ü', 'Ü'];
-      let reemplazos = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U', 'ni', 'NI', 'u', 'U'];
-      let id = this.subtitulo(slice).trim().toLocaleLowerCase().replace(/\s+/g, '_');
-
-      for (let i = 0; i < caracteres.length; i++) {
-        let regex = new RegExp(`${caracteres[i]}`, 'g');
-        id = id.replace(regex, reemplazos[i]);
-      }
-
-      return id;
+      return generarId(this.subtitulo(slice))
     },
   }
 };
