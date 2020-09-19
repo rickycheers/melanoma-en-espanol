@@ -1,8 +1,8 @@
 <template>
-  <section class="container mx-auto">
-    <article class="py-8">
+  <section class="container mx-auto nuestra-historia">
+    <article class="prose max-w-none w-full">
       <div
-        class="border border-gray-300 w-full md:w-3/4 m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
+        class="border border-gray-300 w-full m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
       >
         <div class="w-full md:w-1/3">
           <img src="/images/manos.png" class="object-cover w-full h-full" />
@@ -24,7 +24,7 @@
       </div>
 
       <div
-        class="border border-gray-300 w-full md:w-3/4 m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
+        class="border border-gray-300 w-full m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
       >
         <div class="w-full lg:w-1/3 order-last">
           <img src="/images/nosotros.jpg" class="object-cover w-full h-full" />
@@ -59,7 +59,7 @@
       </div>
 
       <div
-        class="border border-gray-300 w-full md:w-3/4 m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
+        class="border border-gray-300 w-full m-auto bg-white-100 mb-10 flex flex-col md:flex-row"
       >
         <div class="w-full md:w-1/3">
           <img
@@ -94,7 +94,7 @@
           </p>
         </div>
       </div>
-      <div class="border border-gray-300 bg-white-100 md:w-3/4 mx-auto p-10">
+      <div class="border border-gray-300 bg-white-100 w-full mx-auto p-10">
         <h2 class="text-center py-5">Nuestra Misión</h2>
         <p class="px-10">
           En Melanoma en Español creemos que es nuestra misión brindar
