@@ -35,18 +35,23 @@ export default {
     };
   },
   mounted() {
-    $("#slider").slick({
-      autoplay: 0,
-      autoplaySpeed: 8000,
-      adaptiveHeight: true,
-      dots: true,
-      arrows: true,
-      prevArrow:
-        '<button class="slick-arrow-left link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
-      nextArrow:
-        '<button class="slick-arrow-right link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
-    });
-  }
+    setTimeout(this.slider, 1)
+  },
+  methods: {
+    slider() {
+      $("#slider").slick({
+        autoplay: 0,
+        autoplaySpeed: 8000,
+        adaptiveHeight: true,
+        dots: true,
+        arrows: true,
+        prevArrow:
+          '<button class="slick-arrow-left link"><span class="block" style="transform: scale(-1);">&#x279c;</span></button>',
+        nextArrow:
+          '<button class="slick-arrow-right link"><span class="block" style="transform: scale(1);">&#x279c;</span></button>'
+      });
+    }
+  },
 };
 </script>
 
@@ -62,192 +67,194 @@ export default {
   <div>
     <section class="container mx-auto">
       <section class="hero-section px-6 lg:px-0 z-0">
-        <div id="slider" class="relative">
-          <!-- Carousel Body -->
-          <!-- Piel Etiqueta -->
-          <div class="slide">
-            <div
-              class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
-            >
+        <client-only>
+          <div id="slider" class="relative">
+            <!-- Carousel Body -->
+            <!-- Piel Etiqueta -->
+            <div class="slide">
               <div
-                class="relative w-full lg:w-2/5 h-full overflow-hidden"
-                style="min-height: 20rem;"
+                class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
               >
-                <img
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/images/piel-etiqueta.png"
-                  alt
-                />
-              </div>
-              <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
-                <div class="p-12 md:pr-24 md:pl-16">
-                  <p class="text-gray-700">
-                    La piel es una prenda delicada y sensible al sol y no se
-                    puede reemplazar por una nueva, así que protégela.
-                    <br />
-                    <br />La gran mayoría de los melanomas son causados por el
-                    sol y los rayos UV, por lo tanto es importante cuidar
-                    nuestra piel del sol, así estaremos reduciendo la
-                    probabilidad de tener melanoma o algún otro tipo de cáncer
-                    de piel en el futuro.
-                    <br />
-                    <br />
-                    <a class="flex items-baseline mt-3" href="#">
-                      <span>¡Conoce nuestra guía de prevención!</span>
-                      <span class="text-xs ml-1">&#x279c;</span>
-                    </a>
-                  </p>
-                </div>
-                <svg
-                  class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
-                  viewBox="0 0 100 100"
-                  preserveAspectRatio="none"
+                <div
+                  class="relative w-full lg:w-2/5 h-full overflow-hidden"
+                  style="min-height: 20rem;"
                 >
-                  <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
+                  <img
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    src="/images/piel-etiqueta.png"
+                    alt
+                  />
+                </div>
+                <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
+                  <div class="p-12 md:pr-24 md:pl-16">
+                    <p class="text-gray-700">
+                      La piel es una prenda delicada y sensible al sol y no se
+                      puede reemplazar por una nueva, así que protégela.
+                      <br />
+                      <br />La gran mayoría de los melanomas son causados por el
+                      sol y los rayos UV, por lo tanto es importante cuidar
+                      nuestra piel del sol, así estaremos reduciendo la
+                      probabilidad de tener melanoma o algún otro tipo de cáncer
+                      de piel en el futuro.
+                      <br />
+                      <br />
+                      <a class="flex items-baseline mt-3" href="#">
+                        <span>¡Conoce nuestra guía de prevención!</span>
+                        <span class="text-xs ml-1">&#x279c;</span>
+                      </a>
+                    </p>
+                  </div>
+                  <svg
+                    class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Tipos de Melanoma -->
+            <div class="slide">
+              <div
+                class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 h-full overflow-hidden"
+                  style="min-height: 20rem;"
+                >
+                  <img
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    src="/images/tipos-melanoma.png"
+                    alt
+                  />
+                </div>
+                <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
+                  <div class="p-12 md:pr-24 md:pl-16">
+                    <p class="text-gray-700">
+                      ¿Sabías que el melanoma no sólo le da a personas de piel
+                      clara, ojos azules, y cabello rubio o rojizo?, ¿Sabías que
+                      el melanoma puede aparecer en zonas que nunca han estado
+                      expuestas al sol?
+                      <br />
+                      <br />El Melanoma Lentiginoso Acral representa el 5% del
+                      total de casos de melanoma. Es el tipo de melanoma más común
+                      en gente de color, y este puede surgir en las palmas de las
+                      manos, plantas de los pies o debajo de las uñas.
+                      <br />
+                      <br />
+                      <a class="flex items-baseline mt-3" href="#">
+                        <span
+                          >Conoce más sobre los diferentes tipos de
+                          melanoma.</span
+                        >
+                        <span class="text-xs ml-1">&#x279c;</span>
+                      </a>
+                    </p>
+                  </div>
+                  <svg
+                    class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Prevención -->
+            <div class="slide">
+              <div
+                class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 h-full overflow-hidden"
+                  style="min-height: 20rem;"
+                >
+                  <img
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    src="/images/prevencion.png"
+                    alt
+                  />
+                </div>
+                <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
+                  <div class="p-12 md:pr-24 md:pl-16">
+                    <p class="text-gray-700">
+                      No hay forma de prevenir el melanoma al 100%, pues existen
+                      factores de riesgo que no podemos controlar, sin embargo, si
+                      conocemos estos factores podremos estar siempre alerta de
+                      cualquier cambio en nuestra piel.
+                      <br />
+                      <br />La detección temprana del melanoma hace la diferencia.
+                      No tengas miedo de encontrar algo sospechoso, siempre es
+                      mejor detectarlo a tiempo y visitar a un médico, esto puede
+                      <strong>salvar tu vida</strong>.
+                      <br />
+                      <br />
+                      <a class="flex items-baseline mt-3" href="#">
+                        <span>Factores de riesgo del melanoma</span>
+                        <span class="text-xs ml-1">&#x279c;</span>
+                      </a>
+                    </p>
+                  </div>
+                  <svg
+                    class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Tratamientos -->
+            <div class="slide">
+              <div
+                class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 h-full overflow-hidden"
+                  style="min-height: 20rem;"
+                >
+                  <img
+                    class="absolute inset-0 w-full h-full object-cover object-center"
+                    src="/images/tratamientos.png"
+                    alt
+                  />
+                </div>
+                <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
+                  <div class="p-12 md:pr-24 md:pl-16">
+                    <p class="text-gray-700">
+                      A pesar de que el melanoma es el tipo de cáncer de piel más
+                      peligroso, en la actualidad existen nuevas opciones de
+                      tratamientos que han demostrado mejorar la calidad de vida e
+                      incrementar la tasa de sobrevivencia de pacientes con esta
+                      enfermedad.
+                      <br />
+                      <br />Cuando eres diagnosticado con melanoma, las opciones
+                      de tratamientos dependerán de distintos factores como la
+                      fase de la enfermedad, el tipo de melanoma, la ubicación del
+                      tumor y tu salud en general.
+                      <br />
+                      <br />
+                      <a class="flex items-baseline mt-3" href="#">
+                        <span>Opciones de tratamientos</span>
+                        <span class="text-xs ml-1">&#x279c;</span>
+                      </a>
+                    </p>
+                  </div>
+                  <svg
+                    class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                  >
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Tipos de Melanoma -->
-          <div class="slide">
-            <div
-              class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
-            >
-              <div
-                class="relative w-full lg:w-2/5 h-full overflow-hidden"
-                style="min-height: 20rem;"
-              >
-                <img
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/images/tipos-melanoma.png"
-                  alt
-                />
-              </div>
-              <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
-                <div class="p-12 md:pr-24 md:pl-16">
-                  <p class="text-gray-700">
-                    ¿Sabías que el melanoma no sólo le da a personas de piel
-                    clara, ojos azules, y cabello rubio o rojizo?, ¿Sabías que
-                    el melanoma puede aparecer en zonas que nunca han estado
-                    expuestas al sol?
-                    <br />
-                    <br />El Melanoma Lentiginoso Acral representa el 5% del
-                    total de casos de melanoma. Es el tipo de melanoma más común
-                    en gente de color, y este puede surgir en las palmas de las
-                    manos, plantas de los pies o debajo de las uñas.
-                    <br />
-                    <br />
-                    <a class="flex items-baseline mt-3" href="#">
-                      <span
-                        >Conoce más sobre los diferentes tipos de
-                        melanoma.</span
-                      >
-                      <span class="text-xs ml-1">&#x279c;</span>
-                    </a>
-                  </p>
-                </div>
-                <svg
-                  class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
-                  viewBox="0 0 100 100"
-                  preserveAspectRatio="none"
-                >
-                  <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!-- Prevención -->
-          <div class="slide">
-            <div
-              class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
-            >
-              <div
-                class="relative w-full lg:w-2/5 h-full overflow-hidden"
-                style="min-height: 20rem;"
-              >
-                <img
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/images/prevencion.png"
-                  alt
-                />
-              </div>
-              <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
-                <div class="p-12 md:pr-24 md:pl-16">
-                  <p class="text-gray-700">
-                    No hay forma de prevenir el melanoma al 100%, pues existen
-                    factores de riesgo que no podemos controlar, sin embargo, si
-                    conocemos estos factores podremos estar siempre alerta de
-                    cualquier cambio en nuestra piel.
-                    <br />
-                    <br />La detección temprana del melanoma hace la diferencia.
-                    No tengas miedo de encontrar algo sospechoso, siempre es
-                    mejor detectarlo a tiempo y visitar a un médico, esto puede
-                    <strong>salvar tu vida</strong>.
-                    <br />
-                    <br />
-                    <a class="flex items-baseline mt-3" href="#">
-                      <span>Factores de riesgo del melanoma</span>
-                      <span class="text-xs ml-1">&#x279c;</span>
-                    </a>
-                  </p>
-                </div>
-                <svg
-                  class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
-                  viewBox="0 0 100 100"
-                  preserveAspectRatio="none"
-                >
-                  <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!-- Tratamientos -->
-          <div class="slide">
-            <div
-              class="relative block lg:flex items-center shadow-md my-4 lg:h-slider2"
-            >
-              <div
-                class="relative w-full lg:w-2/5 h-full overflow-hidden"
-                style="min-height: 20rem;"
-              >
-                <img
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src="/images/tratamientos.png"
-                  alt
-                />
-              </div>
-              <div class="w-full lg:w-3/5 h-full flex items-center bg-white">
-                <div class="p-12 md:pr-24 md:pl-16">
-                  <p class="text-gray-700">
-                    A pesar de que el melanoma es el tipo de cáncer de piel más
-                    peligroso, en la actualidad existen nuevas opciones de
-                    tratamientos que han demostrado mejorar la calidad de vida e
-                    incrementar la tasa de sobrevivencia de pacientes con esta
-                    enfermedad.
-                    <br />
-                    <br />Cuando eres diagnosticado con melanoma, las opciones
-                    de tratamientos dependerán de distintos factores como la
-                    fase de la enfermedad, el tipo de melanoma, la ubicación del
-                    tumor y tu salud en general.
-                    <br />
-                    <br />
-                    <a class="flex items-baseline mt-3" href="#">
-                      <span>Opciones de tratamientos</span>
-                      <span class="text-xs ml-1">&#x279c;</span>
-                    </a>
-                  </p>
-                </div>
-                <svg
-                  class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
-                  viewBox="0 0 100 100"
-                  preserveAspectRatio="none"
-                >
-                  <polygon points="50,0 100,0 50,100 0,100" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
+        </client-only>
       </section>
     </section>
     <section class="container mx-auto lg:flex">
