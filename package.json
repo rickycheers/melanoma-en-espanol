@@ -1,23 +1,26 @@
 {
+  "name": "site",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve"
   },
   "dependencies": {
-    "tailwindcss": "^1.3.5",
-    "vue": "^2.6.11",
-    "vue-stripe-menu": "^1.2.10"
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@nuxtjs/prismic": "^1.2.3",
+    "@tailwindcss/typography": "^0.2.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-prismic": "^1.0.8",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "nuxt": "^2.14.5"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.0.1",
-    "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.4",
-    "vue-template-compiler": "^2.6.11"
+    "@nuxtjs/tailwindcss": "^2.0.0"
   }
 }
