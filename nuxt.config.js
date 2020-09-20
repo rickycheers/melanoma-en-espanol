@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -73,6 +75,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    "@nuxtjs/dotenv",
     "@nuxtjs/tailwindcss"
   ],
   /*
@@ -92,7 +95,7 @@ export default {
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     apiOptions: {
-      accessToken: ''
+      accessToken: process.env.PRISM_ACCESS_TOKEN
     }
   },
 
