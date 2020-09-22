@@ -99,7 +99,5 @@ export default {
     // Netlify reads a 404.html, Nuxt will load as an SPA
     generate: {
       fallback: '404.html'
-    },
-
-  serverMiddleware: isServerlessEnvironment ? [] : ['~/api/index.js']
+    }
 };
