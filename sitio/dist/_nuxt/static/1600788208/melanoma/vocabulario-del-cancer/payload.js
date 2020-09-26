@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/melanoma/vocabulario-del-cancer", {data:[{},{}],fetch:[],mutations:[]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/unete", {data:[{}],fetch:[],mutations:[]});
