@@ -1,10 +1,11 @@
 require('dotenv').config()
 const app = require('express')()
 const bodyParser = require('body-parser')
-const port = 3000
+const cors = require('cors')
+const port = process.env.PORT
 
 app.use(bodyParser.urlencoded({extended: false}))
-
+app.use(cors({origin: process.env.WEBSITE_HOST}))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
@@ -30,7 +31,7 @@ app.post('/contacto', (req, res) => {
   })
 
   if (error) {
-    res.json({
+    res.status(400).json({
       mensaje: 'Error al validar campos',
       detalles: error.details
     })
