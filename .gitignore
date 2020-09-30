@@ -4,3 +4,4 @@ node_modules
 hot
 npm-debug.log
 public/css/main.css
+dist
