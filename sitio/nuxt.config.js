@@ -1,4 +1,5 @@
 require('dotenv').config()
+import sitemapRoutes from './sitemap'
 
 const isServerlessEnvironment = !!process.env.NOW_REGION
 
@@ -79,7 +80,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    "@nuxtjs/prismic"
+    "@nuxtjs/prismic",
+    "@nuxtjs/sitemap"
   ],
   /*
    ** Build configuration
@@ -98,6 +100,14 @@ export default {
     apiOptions: {
       accessToken: process.env.PRISM_ACCESS_TOKEN
     }
+  },
+
+  sitemap: {
+    defaults: {
+      changefreq: 'monthly',
+    },
+    hostname: 'https://www.melanoma-en-espanol.org',
+    routes: sitemapRoutes,
   },
 
     // Netlify reads a 404.html, Nuxt will load as an SPA
