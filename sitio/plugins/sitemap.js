@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import Prismic from 'prismic-javascript'
 import {format} from 'date-fns'
-import linkResolver from './plugins/link-resolver'
+import linkResolver from './link-resolver'
 
 dotenv.config()
 

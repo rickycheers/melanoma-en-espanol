@@ -1,5 +1,5 @@
 require('dotenv').config()
-import sitemapRoutes from './sitemap.js'
+import sitemapRoutes from './plugins/sitemap'
 
 const isServerlessEnvironment = !!process.env.NOW_REGION
 
