@@ -85,7 +85,11 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    babel: {
+      plugins: ["@babel/plugin-proposal-optional-chaining"]
+    }
+  },
 
   prismic: {
     endpoint: 'https://melanoma-espanol.cdn.prismic.io/api/v2',
