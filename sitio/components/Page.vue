@@ -41,7 +41,7 @@
               </li>
           </ul>
       </div>
-      <div v-if="document.data.referencias.length" class="foot-note mt-10 pt-5 border-t border-gray-500 prose prose-sm max-w-none">
+      <div v-if="document.data.referencias.length" class="foot-note mt-10 pt-5 border-t border-gray-500 prose prose-sm max-w-none break-all">
           <h4>Referencias</h4>
           <ol title="Referencias" name="referencias" class="">
               <li v-for="(referencia, index) in document.data.referencias" :key="index">
