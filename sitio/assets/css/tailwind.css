@@ -104,6 +104,14 @@ a:focus,
     @apply inline-block px-3 py-4 tracking-wide no-underline text-center text-skin-dark-400 uppercase text-sm border-b-2 border-transparent;
 }
 
+.nav-item.last {
+    @apply px-5 bg-skin-dark-400 rounded shadow text-white;
+}
+
+.nav-item.last:hover {
+    @apply bg-skin-dark-300;
+}
+
 .nav-item:hover {
     @apply bg-skin-fair-100 text-white;
 }

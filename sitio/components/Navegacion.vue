@@ -16,6 +16,9 @@
             <sub-menus slot="subnav" :secciones="secciones(item.items)"></sub-menus>
           </menu-expandible>
         </li>
+        <li class="inline-block">
+          <a href="/unete" class="nav-item last">¡Únete!</a>
+        </li>
       </ul>
     </nav>
     <mobile-menu v-if="tipo == 'principal'" class="vc"></mobile-menu>
