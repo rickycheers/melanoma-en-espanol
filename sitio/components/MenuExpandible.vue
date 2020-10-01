@@ -56,5 +56,11 @@ export default {
   beforeDestroy() {
     document.removeEventListener("keydown", this.handleEscape);
   },
+
+  watch:{
+    $route (to, from){
+        this.show = false;
+    }
+  }
 };
 </script>
