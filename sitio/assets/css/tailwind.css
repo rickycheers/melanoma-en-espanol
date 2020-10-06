@@ -165,7 +165,7 @@ a:focus,
 }
 
 .menu-movil .navegacion.movil .sub-menus {
-    @apply px-1 py-3 border-b border-skin-dark-200 bg-skin-fair-100;
+    @apply px-1 py-3 border-b border-skin-dark-200 bg-skin-pale-100;
 }
 
 .hero-section {}
