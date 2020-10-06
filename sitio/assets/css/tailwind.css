@@ -151,7 +151,7 @@ a:focus,
 .mobile-menu {}
 
 .mobile-menu .nav-item {
-    @apply block text-left text-skin-dark-200 border-b border-skin-dark-200;
+    @apply block text-left border-b border-skin-dark-200;
 }
 
 .mobile-menu .nav-item .subnav__item {
@@ -164,6 +164,14 @@ a:focus,
 
 .mobile-menu .subnav__title {
     @apply text-skin-dark-100;
+}
+
+.sub-menus {
+    @apply px-1 py-3 bg-skin-fair-100;
+}
+
+.mobile-menu .navegacion.movil .sub-menus {
+    @apply border-b border-skin-dark-200;
 }
 
 .hero-section {}

@@ -4,7 +4,8 @@
       <div class="hidden md:block logo w-64 p-5" style="width: 17rem;">
         <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
-      <navegacion tipo="principal" />
+      <navegacion tipo="principal" class="hidden md:block" />
+      <mobile-menu tipo="principal" class="block md:hidden" />
     </header>
     <Nuxt />
     <footer

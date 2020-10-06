@@ -2,7 +2,7 @@
   <div class="mobile-menu block md:hidden mb-24 md:mb-0">
     <div class="h-24 fixed inset-0 z-30 bg-white flex items-center justify-between border-b-2">
       <div class="w-1/2 m-6">
-        <img src="/public/images/melanoma-en-espanol-logo.png" alt />
+        <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
       <div class="mr-3">
         <button
@@ -31,71 +31,14 @@
         </button>
       </div>
     </div>
-    <nav
+    <div
       v-if="isOpen"
       class="mobile-menu-items fixed inset-0 z-30 mt-24 overflow-y-scroll bg-white-100"
     >
       <div class="h-full overflow-y-scroll">
-        <div class="nav-item nav-item--active">
-          <a href="/">Inicio</a>
-        </div>
-        <div class="nav-item">
-          <a href="#">Misión</a>
-        </div>
-        <div class="nav-item">
-          <a href="#">Melanoma</a>
-          <div class="pt-4 flex flex-row">
-            <div class="w-1/3">
-              <div class="subnav__title">Prevención</div>
-              <div class="subnav__items-container">
-                <a href="/melanoma/cancer-de-piel" class="subnav__item">Cáncer de Piel</a>
-                <a href="/melanoma/que-es-el-melanoma" class="subnav__item">Melanoma</a>
-                <a href="/melanoma/signos-del-melanoma" class="subnav__item">Signos del Melanoma</a>
-                <a href="/melanoma/factores-de-riesgo" class="subnav__item">Factores de Riesgo</a>
-                <a href="/melanoma/deteccion-temprana" class="subnav__item">Detección Temprana</a>
-                <a
-                  href="/melanoma/prevencion-del-melanoma"
-                  class="subnav__item"
-                >Prevención del Melanoma</a>
-                <a
-                  href="/melanoma/vocabulario-del-cancer"
-                  class="subnav__item"
-                >Vocabulario del Cáncer</a>
-              </div>
-            </div>
-            <div class="w-1/3">
-              <div class="subnav__title">Diagnóstico</div>
-              <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Tipos de Melanoma</a>
-                <a href="#" class="subnav__item">Fases del Melanoma</a>
-                <a href="#" class="subnav__item">Tratamientos</a>
-                <a href="#" class="subnav__item">Factores de Riesgo</a>
-                <a href="#" class="subnav__item">Preguntas Frecuentes</a>
-                <a href="#" class="subnav__item">Estadísticas</a>
-              </div>
-            </div>
-            <div class="w-1/3">
-              <div class="subnav__title">Viviendo con melanoma</div>
-              <div class="subnav__items-container">
-                <a href="#" class="subnav__item">Estudios Clínicos</a>
-                <a href="#" class="subnav__item">Fundaciones</a>
-                <a href="#" class="subnav__item">Cuidadores</a>
-                <a href="#" class="subnav__item">Links de Interés</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="nav-item">
-          <a href="#">Blog</a>
-        </div>
-        <div class="nav-item">
-          <a href="#">Productos Recomendados</a>
-        </div>
-        <div class="nav-item">
-          <a href="#">Contáctanos</a>
-        </div>
+        <navegacion tipo="principal" :movil="true"/>
       </div>
-    </nav>
+    </div>
   </div>
 </template>
 
