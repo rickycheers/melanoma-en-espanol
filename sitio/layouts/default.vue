@@ -5,7 +5,7 @@
         <img src="/images/melanoma-en-espanol-logo.png" alt />
       </div>
       <navegacion tipo="principal" class="hidden md:block" />
-      <mobile-menu tipo="principal" class="block md:hidden" />
+      <menu-movil tipo="principal" class="block md:hidden" />
     </header>
     <Nuxt />
     <footer

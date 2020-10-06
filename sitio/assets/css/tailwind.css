@@ -148,21 +148,19 @@ a:focus,
     @apply text-gray-800 pb-2;
 }
 
-.mobile-menu {}
-
-.mobile-menu .nav-item {
+.menu-movil .nav-item {
     @apply block text-left border-b border-skin-dark-200;
 }
 
-.mobile-menu .nav-item .subnav__item {
+.menu-movil .nav-item .subnav__item {
     @apply normal-case;
 }
 
-.mobile-menu .nav-item--active {
+.menu-movil .nav-item--active {
     @apply bg-skin-fair-100 text-white;
 }
 
-.mobile-menu .subnav__title {
+.menu-movil .subnav__title {
     @apply text-skin-dark-100;
 }
 
@@ -170,7 +168,7 @@ a:focus,
     @apply px-1 py-3 bg-skin-fair-100;
 }
 
-.mobile-menu .navegacion.movil .sub-menus {
+.menu-movil .navegacion.movil .sub-menus {
     @apply border-b border-skin-dark-200;
 }
 

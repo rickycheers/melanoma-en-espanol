@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-menu block md:hidden mb-24 md:mb-0">
+  <div class="menu-movil block md:hidden mb-24 md:mb-0">
     <div class="h-24 fixed inset-0 z-30 bg-white flex items-center justify-between border-b-2">
       <div class="w-1/2 m-6">
         <img src="/images/melanoma-en-espanol-logo.png" alt />
