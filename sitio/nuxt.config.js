@@ -88,6 +88,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    extractCSS: true,
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     }
