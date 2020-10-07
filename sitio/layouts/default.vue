@@ -8,6 +8,7 @@
       <menu-movil tipo="principal" class="block md:hidden" />
     </header>
     <Nuxt />
+    <volver-arriba />
     <footer
       class="container mx-auto bg-skin-pale-100 text-gray-800 h-auto pt-12 pb-6 px-6 md:px-12"
     >
