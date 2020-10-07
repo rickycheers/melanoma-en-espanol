@@ -49,5 +49,10 @@ export default {
       isOpen: false,
     };
   },
+  watch:{
+    $route (to, from){
+        this.isOpen = false;
+    }
+  }
 };
 </script>
