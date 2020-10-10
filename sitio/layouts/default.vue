@@ -2,7 +2,9 @@
   <div>
     <header class="container mx-auto">
       <div class="hidden md:block logo w-64 p-5" style="width: 17rem;">
-        <img src="/images/melanoma-en-espanol-logo.png" alt />
+        <a href="/">
+          <img src="/images/melanoma-en-espanol-logo.png" alt="Logo Melanoma en Español" />
+        </a>
       </div>
       <navegacion tipo="principal" class="hidden md:block" />
       <menu-movil tipo="principal" class="block md:hidden" />
