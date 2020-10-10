@@ -98,7 +98,7 @@ export default {
                       de piel en el futuro.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/prevencion/prevencion">
                         <span>¡Conoce nuestra guía de prevención!</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -143,7 +143,7 @@ export default {
                       manos, plantas de los pies o debajo de las uñas.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/diagnostico-con-melanoma/tipos-de-melanoma">
                         <span
                           >Conoce más sobre los diferentes tipos de
                           melanoma.</span
@@ -191,7 +191,7 @@ export default {
                       <strong>salvar tu vida</strong>.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/prevencion/factores-de-riesgo">
                         <span>Factores de riesgo del melanoma</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -237,7 +237,7 @@ export default {
                       tumor y tu salud en general.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/diagnostico-con-melanoma/tratamientos-del-melanoma">
                         <span>Opciones de tratamientos</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -275,7 +275,7 @@ export default {
           metástasis, si no es tratado a tiempo.
           <br /><br />
           <a
-            href="#"
+            href="/prevencion/que-es-el-melanoma"
             class="p-2 border border-skin-dark-400 text-skin-dark-400 rounded-md"
             >Conoce más</a
           >
