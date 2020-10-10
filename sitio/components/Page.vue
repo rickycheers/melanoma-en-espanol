@@ -4,6 +4,7 @@
     <tabla-de-contenidos
       v-if="secciones.length"
       class="p-5 w-full md:w-1/4 md:order-last"
+      :titulo="$prismic.asText(document.data.titulo)"
       :secciones="secciones"
     />
 

@@ -8,7 +8,7 @@
         <i v-if="colapsado" class="fa fa-angle-up text-skin-pale-100"></i>
         <i v-if="!colapsado" class="fa fa-angle-down text-skin-pale-100"></i>
       </button>
-      <h6 class="text-center text-skin-pale-100">Tabla de Contenidos</h6>
+      <h6 class="underline text-center text-skin-pale-100">{{ titulo }}</h6>
       <transition name="slide-fade">
         <nav v-show="!colapsado" class="tabla-conetnidos mt-4">
           <ul class="list-disc list-inside text-skin-pale-100">
@@ -24,6 +24,10 @@
 <script>
 export default {
   props: {
+    titulo: {
+      required: true,
+      type: String,
+    },
     secciones: {
       required: true,
       type: Array
