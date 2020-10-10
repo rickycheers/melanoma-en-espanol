@@ -58,7 +58,26 @@
       </div>
 
       <h3>Lista de Correos</h3>
-      <p>Suscríbete a nuestra lista de correos para recibir noticias actualizadas y más.</p>...
+      <p>Suscríbete a nuestra lista de correos para recibir noticias actualizadas y más.</p>
+      <div class="w-full md:w-1/2">
+        <form action="https://melanoma-espanol.us10.list-manage.com/subscribe/post?u=b21039d6e0633954c3c13f815&id=d0bfe0e43e" method="POST">
+          <div class="mt-3 flex flex-row flex-wrap shadow">
+            <input
+              type="email"
+              name="EMAIL"
+              class="text-gray-800 w-2/3 p-2 rounded-l-lg"
+              placeholder="nombre@correo.com"
+              required
+            />
+            <button
+              class="p-2 w-1/3 bg-skin-dark-400 rounded-r-lg text-white"
+              type="submit"
+            >
+              Inscribirme
+            </button>
+          </div>
+        </form>
+      </div>
     </article>
     <client-only>
       <div id="fb-root"></div>
