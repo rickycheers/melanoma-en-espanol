@@ -1,5 +1,19 @@
+<style>
+  .tabla-de-contenidos {
+    @apply relative mt-8 bg-skin-dark-300 border-l h-full shadow rounded;
+  }
+
+  @media (min-width: 768px) {
+    .tabla-de-contenidos {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 2rem;
+    }
+  }
+</style>
+
 <template>
-    <section class="relative mt-8 bg-skin-dark-300 border-l h-full shadow rounded">
+    <aside class="tabla-de-contenidos">
       <button 
         class="absolute flex text-gray-500 focus:outline-none focus:text-gray-700 p-2 items-center lg:hidden border rounded-md"
         style="right: 0.75rem; margin-top: -5px;"
@@ -18,7 +32,7 @@
           </ul>
         </nav>
       </transition>
-    </section>
+    </aside>
 </template>
 
 <script>
