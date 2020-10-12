@@ -11,9 +11,9 @@
           </prismic-link>
           <sub-menus v-if="movil && item.items.length" :tipo="tipo" :secciones="secciones(item.items)"></sub-menus>
           <menu-expandible v-if="!movil && item.items.length" :items="item.items" :movil="movil">
-            <prismic-link slot="link" :field="item.primary.link" class="nav-item">
+            <a href="javascript:void(0)" slot="link" class="nav-item">
               {{ item.primary.titulo[0].text }}
-            </prismic-link>
+            </a>
             <sub-menus slot="subnav" :secciones="secciones(item.items)"></sub-menus>
           </menu-expandible>
         </li>
