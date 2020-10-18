@@ -203,6 +203,10 @@ article {
     @apply pt-8 px-12;
 }
 
+.pagina article .contenido img {
+    cursor: pointer;
+}
+
 dt {
     @apply text-skin-dark-300 font-bold text-lg mb-3;
 }
