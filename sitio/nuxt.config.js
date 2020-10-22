@@ -41,12 +41,12 @@ export default {
       },
       {
         hid: "og:description",
-        name: "og:description",
+        property: "og:description",
         content: descripcion
       },
       {
         hid: "og:image",
-        name: "og:image",
+        property: "og:image",
         content: "/images/og-image.png"
       }
     ],
