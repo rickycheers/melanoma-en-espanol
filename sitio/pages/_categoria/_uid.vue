@@ -14,6 +14,11 @@ export default {
           property: "og:title",
           content: titulo
         },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "article"
+        }
       ]
     }
   },

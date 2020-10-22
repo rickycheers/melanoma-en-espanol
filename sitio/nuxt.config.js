@@ -48,6 +48,11 @@ export default {
         hid: "og:image",
         property: "og:image",
         content: "/images/og-image.png"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
       }
     ],
     link: [
