@@ -2,7 +2,6 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español - Inicio",
       link: [
         {
           rel: "stylesheet",

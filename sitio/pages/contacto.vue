@@ -121,7 +121,14 @@ export default {
   mixins: [VueForm],
   head() {
     return {
-      title: "Contacto"
+      title: "Contacto",
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Contacto'
+        },
+      ]
     }
   },
   data() {

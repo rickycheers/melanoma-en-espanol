@@ -3,6 +3,8 @@ import sitemapRoutes from './plugins/sitemap'
 
 const isServerlessEnvironment = !!process.env.NOW_REGION
 
+const descripcion = "Melanoma en Español es una iniciativa y plataforma en construcción, la cual busca ayudar a todas las personas que son y siguen siendo diagnosticadas con melanoma todos los días; así como para aquellos que buscan prevenir la enfermedad."
+
 export default {
   /*
    ** Nuxt target
@@ -14,7 +16,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    titleTemplate: (chunk) => {
+      return chunk ? `${chunk} - Melanoma en Español` : 'Melanoma en Español'
+    },
     meta: [
       {
         charset: "utf-8"
@@ -26,7 +30,24 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: descripcion
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        template: (chunk) => {
+          return chunk ? `Melanoma en Español - ${chunk}` : "Melanoma en Español"
+        }
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: descripcion
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "/images/og-image.png"
       }
     ],
     link: [

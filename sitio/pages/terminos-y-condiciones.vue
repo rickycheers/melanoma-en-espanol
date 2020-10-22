@@ -170,3 +170,20 @@
     </article>
   </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Términos y Condiciones',
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Términos y Condiciones'
+        },
+      ]
+    }
+  }
+}
+</script>

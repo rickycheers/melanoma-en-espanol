@@ -188,3 +188,20 @@
     </article>
   </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Nuestra Historia',
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Nuestra Historia'
+        },
+      ]
+    }
+  }
+}
+</script>

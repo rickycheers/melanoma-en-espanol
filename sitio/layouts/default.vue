@@ -63,7 +63,6 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español",
       link: [
         {
           rel: "apple-touch-icon",

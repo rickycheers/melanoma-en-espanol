@@ -89,7 +89,14 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español - Unete",
+      title: "Únete",
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Únete'
+        },
+      ],
       script: [
         {
           async: true,
