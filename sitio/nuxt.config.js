@@ -6,6 +6,9 @@ const isServerlessEnvironment = !!process.env.NOW_REGION
 const descripcion = "Melanoma en Español es una iniciativa y plataforma en construcción, la cual busca ayudar a todas las personas que son y siguen siendo diagnosticadas con melanoma todos los días; así como para aquellos que buscan prevenir la enfermedad."
 
 export default {
+  env: {
+    API_HOST: process.env.API_HOST || 'https://localhost:3001'
+  },
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target

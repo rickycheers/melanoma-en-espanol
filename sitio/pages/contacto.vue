@@ -156,7 +156,8 @@ export default {
       this.enviando = true
 
       try {
-        await fetch(`${process.env.API_HOST}/contacto`, {
+        let host = process.env.API_HOST
+        await fetch(`${host}/contacto`, {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(this.campos)
