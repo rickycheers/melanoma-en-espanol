@@ -53,9 +53,14 @@ app.post('/contacto', (req, res) => {
     ${req.body.mensaje}`
   };
 
-  mg.messages().send(data);
+  mg.messages().send(data, function (error, body) {
+    if (error) {
+      res.status(500).json({ error: error })
+      return
+    }
 
-  res.json({})
+    res.json(body)
+  });
 })
 
 app.listen(port, () => {
