@@ -168,6 +168,10 @@ export default {
         console.error(e)
       } finally {
         this.enviando = false
+        window.scroll({
+          top: 0,
+          behavior: 'smooth'
+        });
       }
     }
   }
