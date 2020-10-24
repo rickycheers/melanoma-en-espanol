@@ -103,7 +103,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/dotenv",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-analytics",
   ],
   /*
    ** Nuxt.js modules
@@ -121,6 +122,10 @@ export default {
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     }
+  },
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   prismic: {
