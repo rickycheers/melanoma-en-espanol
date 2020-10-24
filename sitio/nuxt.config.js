@@ -8,8 +8,18 @@ const descripcion = "Melanoma en Español es una iniciativa y plataforma en cons
 export default {
   env: {
     API_HOST: process.env.API_HOST || 'https://localhost:3001',
-    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
   },
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+      debug: {
+        enabled: true,
+        sendHitTask: true
+      }
+    },
+  },
+
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -123,10 +133,6 @@ export default {
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     }
-  },
-
-  googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   prismic: {
