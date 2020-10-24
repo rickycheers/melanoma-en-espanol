@@ -13,10 +13,6 @@ export default {
   publicRuntimeConfig: {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID,
-      debug: {
-        enabled: true,
-        sendHitTask: true
-      }
     },
   },
 
