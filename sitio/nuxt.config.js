@@ -7,7 +7,8 @@ const descripcion = "Melanoma en Español es una iniciativa y plataforma en cons
 
 export default {
   env: {
-    API_HOST: process.env.API_HOST || 'https://localhost:3001'
+    API_HOST: process.env.API_HOST || 'https://localhost:3001',
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
   },
   /*
    ** Nuxt target
