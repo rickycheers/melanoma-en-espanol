@@ -45,7 +45,7 @@
         &copy; 2020 &mdash; Hecho con ❤ por Melanoma en Español
       </div>
       <div class="block md:inline text-xs text-center md:float-right">
-        <a href="#" class="text-gray-800">Aviso de Privacidad</a> &CenterDot;
+        <a href="/aviso-de-privacidad" class="text-gray-800">Aviso de Privacidad</a> &CenterDot;
         <a href="/terminos-y-condiciones" class="text-gray-800">Términos y Condiciones</a>
       </div>
       <p class="mt-5 w-full md:w-3/4 m-auto text-xs text-gray-600 text-center">

@@ -266,7 +266,7 @@ export default {
         <p class="my-5 text-gray-900">
           El melanoma, melanoma maligno o melanoma cutáneo es un tipo de cáncer
           de piel que se origina debido al crecimiento desmedido de los
-          melanocitos (células que producen melanina, la cual se encarga de
+          melanocitos (células que producen melanina), la cual se encarga de
           darle color a la piel, a los ojos y al cabello.
           <br /><br />
           Este tipo de cáncer de piel es el menos común, sin embargo es el más

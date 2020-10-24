@@ -1,14 +1,14 @@
 <template>
   <section class="container mx-auto">
     <article class="prose max-w-none w-full">
-      <h1>¡Únete!</h1>
+      <h1>¡Únete a Nuestra Comunidad!</h1>
 
       <h3>Grupo de Ayuda (Facebook)</h3>
       <p>Si has sido o fuiste diagnosticado con melanoma, te invitamos a unirte a nuestro grupo de soporte en Facebook.</p>
       <p>Este grupo busca reunir en un mismo lugar las experiencias, aprendizajes, historias, consejos, y dudas de todos aquellas personas que viven con melanoma o tienen a un ser querido con esta enfermedad.</p>
 
       <h3>Página (Facebook)</h3>
-      <p>Dale "like" a nuestra página de Facebook para mantenerte informado y conocer algunos tipos de como protegerte y prevenir el melanoma.</p>
+      <p>Dale "like" a nuestra página de Facebook para mantenerte informado y conocer algunos consejos y <span class="italic">tips</span> de como protegerte y prevenir el melanoma.</p>
 
       <div class="flex flex-col md:flex-row">
         <div style="width: 280px;">
@@ -89,7 +89,7 @@
 export default {
   head() {
     return {
-      title: "Únete",
+      title: "Únete a nuestra comunidad",
       meta: [
         {
           hid: "og:title",
