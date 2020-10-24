@@ -118,7 +118,8 @@ export default {
    */
   modules: [
     "@nuxtjs/prismic",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
   /*
    ** Build configuration
@@ -144,8 +145,15 @@ export default {
     defaults: {
       changefreq: 'monthly',
     },
-    hostname: 'https://www.melanoma-en-espanol.org',
+    hostname: 'https://www.melanoma-espanol.org',
     routes: sitemapRoutes,
+  },
+
+  robots: () => {
+    return {
+      UserAgent: '*',
+      Disallow: process.env.MODE === 'prod' ? '' : '/'
+    }
   },
 
     // Netlify reads a 404.html, Nuxt will load as an SPA
