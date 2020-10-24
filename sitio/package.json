@@ -13,6 +13,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@nuxtjs/prismic": "^1.2.3",
+    "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.2.0",
     "apollo-cache-inmemory": "^1.6.6",
