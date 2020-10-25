@@ -33,7 +33,7 @@
         <span class="inline-flex px-2">Muchas gracias por ponerte en contacto con nosotros. De ser necesario, nos pondremos en contacto contigo lo antes posible.</span>
       </div>
       <div v-if="!enviado">
-        <p>Si tienes alguna sugerancia, comentario, o algún problema relacionado con el sitio envíanos un mensaje y nos pondremos en contacto contigo lo mas pronto posible.</p>
+        <p>Si tienes alguna sugerancia, comentario, o algún problema relacionado con el sitio envíanos un mensaje y nos pondremos en contacto contigo lo más pronto posible.</p>
         <vue-form :state="formState" @submit.prevent="enviar" id="contacto" class="w-full my-8 text-gray-700">
           <div class="flex flex-wrap mb-6">
             <validate class="relative w-full appearance-none label-floating">
@@ -121,7 +121,14 @@ export default {
   mixins: [VueForm],
   head() {
     return {
-      title: "Contacto"
+      title: "Contacto",
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Contacto'
+        },
+      ]
     }
   },
   data() {
@@ -149,7 +156,8 @@ export default {
       this.enviando = true
 
       try {
-        await fetch(`${process.env.API_HOST}/contacto`, {
+        let host = process.env.API_HOST
+        await fetch(`${host}/contacto`, {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(this.campos)
@@ -160,6 +168,10 @@ export default {
         console.error(e)
       } finally {
         this.enviando = false
+        window.scroll({
+          top: 0,
+          behavior: 'smooth'
+        });
       }
     }
   }

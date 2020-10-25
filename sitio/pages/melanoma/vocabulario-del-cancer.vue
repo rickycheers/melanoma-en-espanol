@@ -124,3 +124,20 @@
     </foot-note>
   </article>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Vocabulario del Cáncer',
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Vocabulario del Cáncer'
+        },
+      ]
+    }
+  }
+}
+</script>

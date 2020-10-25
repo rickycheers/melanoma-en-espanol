@@ -96,7 +96,7 @@
       </div>
       <div class="border border-gray-300 bg-white-100 w-full mx-auto p-10">
         <h2 class="text-center py-5">Nuestra Misión</h2>
-        <p class="px-10">
+        <p>
           En Melanoma en Español creemos que es nuestra misión brindar
           información, soporte y esperanza a todos aquellos que de alguna u otra
           forma han sido afectados por el melanoma. Parte importante de esta
@@ -123,7 +123,7 @@
               ser una estrategia efectiva para prevenirlo y detectarlo a tiempo
               en algunos casos, sentimos que es nuestra responsabilidad
               proporcionar información valiosa sobre el melanoma, que aunque es
-              poco conocido, no deja de ser común y un peligroso. Brindaremos
+              poco conocido, no deja de ser común y peligroso. Brindaremos
               información confiable y oportuna a todas las personas
               diagnosticadas con melanoma, para que así puedan entender y
               enfrentar de una mejor manera esta compleja enfermedad.
@@ -163,7 +163,7 @@
               muchos factores que pueden causar el melanoma y no podemos
               controlar, sin embargo, hay otros que sí están en nuestras manos.
               <br />
-              <span>#PrevenirEsMejorQueLamentar</span>
+              <span>#PrevenirEsVivir</span>
             </p>
           </div>
           <div class="w-full md:w-2/12 h-auto flex content-around items-center">
@@ -175,7 +175,7 @@
             </h4>
             <p class="text-sm">
               Buscamos ser un espacio en donde puedas conectar con gente que
-              tiene experiencias similares a la tuyas, e historias de las que
+              tiene experiencias similares a las tuyas, e historias de las que
               puedas aprender, queremos ser una plataforma en donde puedas
               compartir tu propia experiencia de vida con melanoma; y sobre
               todo, queremos que te sientas acompañado en este proceso, pues no
@@ -188,3 +188,20 @@
     </article>
   </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Nuestra Historia',
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Nuestra Historia'
+        },
+      ]
+    }
+  }
+}
+</script>

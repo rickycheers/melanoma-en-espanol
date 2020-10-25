@@ -1,14 +1,14 @@
 <template>
   <section class="container mx-auto">
     <article class="prose max-w-none w-full">
-      <h1>¡Únete!</h1>
+      <h1>¡Únete a Nuestra Comunidad!</h1>
 
-      <h3>Grupo de Ayuda</h3>
+      <h3>Grupo de Ayuda (Facebook)</h3>
       <p>Si has sido o fuiste diagnosticado con melanoma, te invitamos a unirte a nuestro grupo de soporte en Facebook.</p>
       <p>Este grupo busca reunir en un mismo lugar las experiencias, aprendizajes, historias, consejos, y dudas de todos aquellas personas que viven con melanoma o tienen a un ser querido con esta enfermedad.</p>
 
-      <h3>Página de Facebook</h3>
-      <p>Dale "like" a nuestra página de Facebook para mantenerte informado y conocer algunos tipos de como protegerte y prevenir el melanoma.</p>
+      <h3>Página (Facebook)</h3>
+      <p>Dale "like" a nuestra página de Facebook para mantenerte informado y conocer algunos consejos y <span class="italic">tips</span> de como protegerte y prevenir el melanoma.</p>
 
       <div class="flex flex-col md:flex-row">
         <div style="width: 280px;">
@@ -57,8 +57,27 @@
         </div>
       </div>
 
-      <h3>Lista de Correos</h3>
-      <p>Suscríbete a nuestra lista de correos para recibir noticias actualizadas y más.</p>...
+      <h3>Suscríbite para recibir noticias</h3>
+      <p>Suscríbete a nuestra lista de correos para recibir noticias actualizadas y más.</p>
+      <div class="w-full md:w-1/2">
+        <form action="https://melanoma-espanol.us10.list-manage.com/subscribe/post?u=b21039d6e0633954c3c13f815&id=d0bfe0e43e" method="POST">
+          <div class="mt-3 flex flex-row flex-wrap shadow">
+            <input
+              type="email"
+              name="EMAIL"
+              class="text-gray-800 w-2/3 p-2 rounded-l-lg"
+              placeholder="nombre@correo.com"
+              required
+            />
+            <button
+              class="p-2 w-1/3 bg-skin-dark-400 rounded-r-lg text-white"
+              type="submit"
+            >
+              Inscribirme
+            </button>
+          </div>
+        </form>
+      </div>
     </article>
     <client-only>
       <div id="fb-root"></div>
@@ -70,7 +89,14 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español - Unete",
+      title: "Únete a nuestra comunidad",
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: 'Únete'
+        },
+      ],
       script: [
         {
           async: true,

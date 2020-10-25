@@ -1,30 +1,34 @@
 <template>
-  <div>
-    <nav v-if="tipo == 'principal'" id="nav" class="vc px-5 hidden md:block bg-skin-fair-200 shadow">
+  <div class="navegacion" :class="{movil: movil}">
+    <nav v-if="tipo == 'principal'" class="px-0 md:px-5 bg-skin-fair-200 shadow">
       <ul>
-        <li class="inline-block">
+        <li class="block md:inline-block">
           <a href="/" class="nav-item">Inicio</a>
         </li>
-        <li v-for="(item, i) in items" :key="i" class="inline-block">
-          <prismic-link v-if="!item.items.length" :field="item.primary.link" class="nav-item">
+        <li v-for="(item, i) in items" :key="i" class="block md:inline-block">
+          <prismic-link v-if="movil || !item.items.length" :field="item.primary.link" class="nav-item" :class="{'sub-menu-padre': item.items.length}">
             {{ item.primary.titulo[0].text }}
           </prismic-link>
-          <menu-expandible v-if="item.items.length" :items="item.items">
-            <prismic-link slot="link" :field="item.primary.link" class="nav-item">
+          <sub-menus v-if="movil && item.items.length" :tipo="tipo" :secciones="secciones(item.items)"></sub-menus>
+          <menu-expandible v-if="!movil && item.items.length" :items="item.items" :movil="movil">
+            <a href="javascript:void(0)" slot="link" class="nav-item">
               {{ item.primary.titulo[0].text }}
-            </prismic-link>
+            </a>
             <sub-menus slot="subnav" :secciones="secciones(item.items)"></sub-menus>
           </menu-expandible>
         </li>
+        <li class="block md:inline-block">
+          <a href="/unete" class="nav-item last">¡Únete!</a>
+        </li>
       </ul>
     </nav>
-    <mobile-menu v-if="tipo == 'principal'" class="vc"></mobile-menu>
     <sub-menus  v-if="mostrarSubmenus" :secciones="secciones(buscarPorNombre(menu))"></sub-menus>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'navegacion',
   props: {
     tipo: {
       type: String,
@@ -33,6 +37,10 @@ export default {
     menu: {
       type: String,
       default: null
+    },
+    movil: {
+      type: Boolean,
+      default: false
     }
   },
 

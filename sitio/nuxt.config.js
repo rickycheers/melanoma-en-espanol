@@ -1,9 +1,21 @@
 require('dotenv').config()
-import sitemapRoutes from './sitemap'
+import sitemapRoutes from './plugins/sitemap'
 
 const isServerlessEnvironment = !!process.env.NOW_REGION
 
+const descripcion = "Melanoma en Español es una iniciativa y plataforma en construcción, la cual busca ayudar a todas las personas que son y siguen siendo diagnosticadas con melanoma todos los días; así como para aquellos que buscan prevenir la enfermedad."
+
 export default {
+  env: {
+    API_HOST: process.env.API_HOST || 'https://localhost:3001',
+  },
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    },
+  },
+
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -14,7 +26,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    titleTemplate: (chunk) => {
+      return chunk ? `${chunk} - Melanoma en Español` : 'Melanoma en Español'
+    },
     meta: [
       {
         charset: "utf-8"
@@ -26,7 +40,29 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: descripcion
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        template: (chunk) => {
+          return chunk ? `Melanoma en Español - ${chunk}` : "Melanoma en Español"
+        }
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: descripcion
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/images/og-image.png"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
       }
     ],
     link: [
@@ -74,20 +110,23 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/dotenv",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-analytics",
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     "@nuxtjs/prismic",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    extractCSS: true,
     babel: {
       plugins: ["@babel/plugin-proposal-optional-chaining"]
     }
@@ -106,8 +145,15 @@ export default {
     defaults: {
       changefreq: 'monthly',
     },
-    hostname: 'https://www.melanoma-en-espanol.org',
+    hostname: 'https://www.melanoma-espanol.org',
     routes: sitemapRoutes,
+  },
+
+  robots: () => {
+    return {
+      UserAgent: '*',
+      Disallow: process.env.MODE === 'prod' ? '' : '/'
+    }
   },
 
     // Netlify reads a 404.html, Nuxt will load as an SPA

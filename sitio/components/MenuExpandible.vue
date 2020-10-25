@@ -1,11 +1,11 @@
 <template>
-  <div class="inline-block">
+  <div class="menu-expandible inline-block">
     <div
       v-if="show"
       @mouseover="show = false"
       class="fixed w-full h-full inset-0 z-10 bg-transparent"
     ></div>
-    <div @mouseover="show = true" class="relative z-20 w-">
+    <div @mouseover="show = true" class="relative z-20">
       <slot name="link"></slot>
     </div>
     <transition
@@ -56,5 +56,11 @@ export default {
   beforeDestroy() {
     document.removeEventListener("keydown", this.handleEscape);
   },
+
+  watch:{
+    $route (to, from){
+        this.show = false;
+    }
+  }
 };
 </script>

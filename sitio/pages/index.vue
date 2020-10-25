@@ -2,7 +2,6 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español - Inicio",
       link: [
         {
           rel: "stylesheet",
@@ -98,7 +97,7 @@ export default {
                       de piel en el futuro.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/prevencion/prevencion">
                         <span>¡Conoce nuestra guía de prevención!</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -143,7 +142,7 @@ export default {
                       manos, plantas de los pies o debajo de las uñas.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/diagnostico-con-melanoma/tipos-de-melanoma">
                         <span
                           >Conoce más sobre los diferentes tipos de
                           melanoma.</span
@@ -191,7 +190,7 @@ export default {
                       <strong>salvar tu vida</strong>.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/prevencion/factores-de-riesgo">
                         <span>Factores de riesgo del melanoma</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -237,7 +236,7 @@ export default {
                       tumor y tu salud en general.
                       <br />
                       <br />
-                      <a class="flex items-baseline mt-3" href="#">
+                      <a class="flex items-baseline mt-3" href="/diagnostico-con-melanoma/tratamientos-del-melanoma">
                         <span>Opciones de tratamientos</span>
                         <span class="text-xs ml-1">&#x279c;</span>
                       </a>
@@ -267,7 +266,7 @@ export default {
         <p class="my-5 text-gray-900">
           El melanoma, melanoma maligno o melanoma cutáneo es un tipo de cáncer
           de piel que se origina debido al crecimiento desmedido de los
-          melanocitos (células que producen melanina, la cual se encarga de
+          melanocitos (células que producen melanina), la cual se encarga de
           darle color a la piel, a los ojos y al cabello.
           <br /><br />
           Este tipo de cáncer de piel es el menos común, sin embargo es el más
@@ -275,7 +274,7 @@ export default {
           metástasis, si no es tratado a tiempo.
           <br /><br />
           <a
-            href="#"
+            href="/prevencion/que-es-el-melanoma"
             class="p-2 border border-skin-dark-400 text-skin-dark-400 rounded-md"
             >Conoce más</a
           >
@@ -528,19 +527,20 @@ export default {
         <div
           class="m-0 p-0 text-base md:text-xl text-white antialiased text-center"
         >
-          Inscríbite para recibirlas en tu corrreo.
+          Inscríbete para recibirlas en tu corrreo.
         </div>
-        <form action="/" method="POST">
+        <form action="https://melanoma-espanol.us10.list-manage.com/subscribe/post?u=b21039d6e0633954c3c13f815&id=d0bfe0e43e" method="POST">
           <div class="mt-3 flex flex-row flex-wrap shadow">
             <input
               type="email"
-              name="email"
+              name="EMAIL"
               class="text-gray-800 w-2/3 p-2 rounded-l-lg"
               placeholder="nombre@correo.com"
+              required
             />
             <button
               class="p-2 w-1/3 bg-skin-dark-400 rounded-r-lg text-white"
-              type="button"
+              type="submit"
             >
               Inscribirme
             </button>

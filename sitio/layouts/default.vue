@@ -2,11 +2,15 @@
   <div>
     <header class="container mx-auto">
       <div class="hidden md:block logo w-64 p-5" style="width: 17rem;">
-        <img src="/images/melanoma-en-espanol-logo.png" alt />
+        <a href="/">
+          <img src="/images/melanoma-en-espanol-logo.png" alt="Logo Melanoma en Español" />
+        </a>
       </div>
-      <navegacion tipo="principal" />
+      <navegacion tipo="principal" class="hidden md:block" />
+      <menu-movil tipo="principal" class="block md:hidden" />
     </header>
     <Nuxt />
+    <volver-arriba />
     <footer
       class="container mx-auto bg-skin-pale-100 text-gray-800 h-auto pt-12 pb-6 px-6 md:px-12"
     >
@@ -41,7 +45,7 @@
         &copy; 2020 &mdash; Hecho con ❤ por Melanoma en Español
       </div>
       <div class="block md:inline text-xs text-center md:float-right">
-        <a href="#" class="text-gray-800">Aviso de Privacidad</a> &CenterDot;
+        <a href="/aviso-de-privacidad" class="text-gray-800">Aviso de Privacidad</a> &CenterDot;
         <a href="/terminos-y-condiciones" class="text-gray-800">Términos y Condiciones</a>
       </div>
       <p class="mt-5 w-full md:w-3/4 m-auto text-xs text-gray-600 text-center">
@@ -59,7 +63,6 @@
 export default {
   head() {
     return {
-      title: "Melanoma en Español",
       link: [
         {
           rel: "apple-touch-icon",

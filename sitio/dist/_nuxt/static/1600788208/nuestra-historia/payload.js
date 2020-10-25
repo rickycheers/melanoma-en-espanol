@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/nuestra-historia", {data:[{}],fetch:[],mutations:[]});
