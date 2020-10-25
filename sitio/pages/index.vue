@@ -527,7 +527,7 @@ export default {
         <div
           class="m-0 p-0 text-base md:text-xl text-white antialiased text-center"
         >
-          Inscríbite para recibirlas en tu corrreo.
+          Inscríbete para recibirlas en tu corrreo.
         </div>
         <form action="https://melanoma-espanol.us10.list-manage.com/subscribe/post?u=b21039d6e0633954c3c13f815&id=d0bfe0e43e" method="POST">
           <div class="mt-3 flex flex-row flex-wrap shadow">
