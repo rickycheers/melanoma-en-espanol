@@ -443,7 +443,7 @@ export default {
               </div>
               <div class="mt-5 text-center">
                 <a
-                  href="https://medium.com/@laura.acuna.aranda/d3253f5ca40e"
+                  href="https://melanoma-espanol.medium.com/d3253f5ca40e"
                   class="btn-link"
                   target="_blank"
                   >Leer blog</a
@@ -473,7 +473,7 @@ export default {
               </div>
               <div class="mt-5 text-center">
                 <a
-                  href="https://medium.com/@laura.acuna.aranda/7c5023725391"
+                  href="https://melanoma-espanol.medium.com/7c5023725391"
                   class="btn-link"
                   target="_blank"
                   >Leer blog</a
@@ -504,7 +504,7 @@ export default {
               </div>
               <div class="mt-5 text-center">
                 <a
-                  href="https://medium.com/@laura.acuna.aranda/14d7a673e21b"
+                  href="https://melanoma-espanol.medium.com/14d7a673e21b"
                   class="btn-link"
                   target="_blank"
                   >Leer blog</a
