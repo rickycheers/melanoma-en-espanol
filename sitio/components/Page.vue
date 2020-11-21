@@ -66,7 +66,7 @@
               </li>
           </ol>
       </div>
-      <Tinybox v-model="indice" :images="imagenes" />
+      <Tinybox v-if="imagenes.length" v-model="indice" :images="imagenes" />
     </article>
   </div>
 </template>
@@ -92,7 +92,7 @@ export default {
       imagenes: [],
     }
   },
-  created() {
+  mounted() {
     let i = 0;
 
     for (const slice of this.document.data.body) {
