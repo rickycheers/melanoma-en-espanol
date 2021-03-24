@@ -3,7 +3,7 @@ import sitemapRoutes from './plugins/sitemap'
 
 const isServerlessEnvironment = !!process.env.NOW_REGION
 
-const descripcion = "Melanoma en Español es una iniciativa y plataforma en construcción, la cual busca ayudar a todas las personas que son y siguen siendo diagnosticadas con melanoma todos los días; así como para aquellos que buscan prevenir la enfermedad."
+const descripcion = "Información para a personas diagnosticadas con melanoma y para quienes quieran prevenirlo"
 
 export default {
   env: {
@@ -57,13 +57,18 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "/images/og-image.jpeg"
+        content: "https://www.melanoma-espanol.org/images/og-image.jpeg"
       },
       {
         hid: "og:type",
         property: "og:type",
         content: "website"
-      }
+      },
+      {
+        hid: "twitter:image",
+        property: "twitter:image",
+        content: "https://www.melanoma-espanol.org/images/twitter-image.jpeg"
+      },
     ],
     link: [
       {
