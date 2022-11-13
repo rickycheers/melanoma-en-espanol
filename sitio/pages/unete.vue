@@ -55,6 +55,12 @@
             </div>
           </client-only>
         </div>
+        <div class="md:ml-8" style="width: 280px">
+          <h4>Chat (Discord)</h4>
+          <client-only>
+            <iframe src="https://discord.com/widget?id=1038828009882406943&theme=dark" width="280" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          </client-only>
+        </div>
       </div>
 
       <h3>Suscríbite para recibir noticias</h3>
