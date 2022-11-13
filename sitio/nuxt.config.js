@@ -139,6 +139,7 @@ export default {
 
   prismic: {
     endpoint: 'https://melanoma-espanol.cdn.prismic.io/api/v2',
+    modern: true,
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
     apiOptions: {

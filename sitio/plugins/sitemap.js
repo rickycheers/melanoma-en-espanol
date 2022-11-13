@@ -1,5 +1,5 @@
 import dotenv from 'dotenv'
-import Prismic from 'prismic-javascript'
+import Prismic from '@prismicio/client'
 import {format} from 'date-fns'
 import linkResolver from './link-resolver'
 
