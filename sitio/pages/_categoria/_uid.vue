@@ -3,9 +3,14 @@
 </template>
 
 <script>
+import { generaDescripcion, obtenImagenPrincipal } from '../../utils';
+
 export default {
   head() {
     let titulo = this.$prismic.asText(this.document.data.titulo)
+    let descripcion = generaDescripcion(this.document.data.body, this.$prismic)
+    let imagen = obtenImagenPrincipal(this.document.data.body, this.$prismic)
+
     return {
       title: titulo,
       meta: [
@@ -18,8 +23,28 @@ export default {
           hid: "og:type",
           property: "og:type",
           content: "article"
-        }
-      ]
+        },
+        {
+          hid: "description",
+          property: "description",
+          content: descripcion
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: descripcion
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: imagen + '&width=800'
+        },
+        {
+          hid: "twitter:image",
+          property: "twitter:image",
+          content: imagen + '&width=800'
+        },
+      ],
     }
   },
   async asyncData({ $prismic, params, error }) {

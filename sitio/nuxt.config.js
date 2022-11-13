@@ -29,6 +29,10 @@ export default {
     titleTemplate: (chunk) => {
       return chunk ? `${chunk} - Melanoma en Español` : 'Melanoma en Español'
     },
+    __dangerouslyDisableSanitizersByTagID: {
+      'og:image': ['content'],
+      'twitter:image': ['content'],
+    },
     meta: [
       {
         charset: "utf-8"
