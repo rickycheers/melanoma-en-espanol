@@ -38,10 +38,13 @@ app.post('/contacto', (req, res) => {
     return
   }
 
-  const mailgun = require("mailgun-js");
   const key = process.env.MAILGUN_API_KEY
   const domain = process.env.MAILGUN_DOMAIN
-  const mg = mailgun({apiKey: key, domain: domain});
+  const formData = require('form-data');
+  const Mailgun = require('mailgun.js');
+  const mailgun = new Mailgun(formData);
+  const mg = mailgun.client({username: 'api', key: key});
+
   const data = {
     from: `Melanoma en Español <no-responder@${domain}>`,
     to: process.env.EMAIL_CONTACTO,
@@ -53,14 +56,9 @@ app.post('/contacto', (req, res) => {
     ${req.body.mensaje}`
   };
 
-  mg.messages().send(data, function (error, body) {
-    if (error) {
-      res.status(500).json({ error: error })
-      return
-    }
-
-    res.json(body)
-  });
+  mg.messages.create(domain, data)
+    .then(msg => res.json(msg))
+    .catch(err => res.status(500).json({ error: err }))
 })
 
 app.listen(port, () => {
