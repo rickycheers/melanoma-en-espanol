@@ -33,6 +33,9 @@ export default {
       'og:image': ['content'],
       'twitter:image': ['content'],
     },
+    htmlAttrs: {
+      lang: 'es',
+    },
     meta: [
       {
         charset: "utf-8"
